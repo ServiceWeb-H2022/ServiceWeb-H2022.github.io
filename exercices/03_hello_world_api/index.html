@@ -820,6 +820,9 @@ class Database {
   }
 }
 </code></pre>
+<p>Une fois les modifications effectuées, lancez la commande suivante en console</p>
+<pre><code class="language-bash">composer update
+</code></pre>
 <h2 id="rediriger-les-routes">Rediriger les routes</h2>
 <p>Nous allons inclure les paramètres de nos appel directement dans l'url de la requête. ex: l'url <code>http://localhost/HelloWorldApi/greetings/show/6/</code> va afficher la salutation avec le id 6, mais en réalité l'url serait plutôt <code>http://localhost/HelloWorldApi/api/index.php?view=single&amp;id=$6</code>. Une façon de faire est de créer un fichier <code>.htaccess</code> pour indiquer à notre serveur Apache de "traduire" l'url vers le bon fichier.</p>
 <p>Créez un fichier <code>.htaccess</code> à la racine de votre projet et incluez les lignes suivantes : </p>
@@ -864,7 +867,7 @@ api/index.php
 
 require(&quot;../bootstrap.php&quot;);
 
-use Src\GreetingRestHandler;
+use Src\GreetingHandler;
 
 // Récupération des paramêtres de la requête
 $view = $_GET[&quot;view&quot;] ?? &quot;&quot;;
@@ -908,6 +911,7 @@ class SimpleRest {
 
         header($this-&gt;httpVersion. &quot; &quot;. $statusCode .&quot; &quot;. $statusMessage);      
         header(&quot;Content-Type:&quot;. $contentType);
+        header(&quot;Content-Type:&quot;. &quot;X-Content-Type-Options: nosniff&quot;);
     }
 
     public function getHttpStatusMessage($statusCode){
@@ -1001,7 +1005,7 @@ class GreetingHandler extends SimpleRest {
         $requestContentType = $_SERVER['HTTP_ACCEPT'];
         $this -&gt;setHttpHeaders($requestContentType, $statusCode);
 
-        if(strpos($requestContentType,'application/json') !== false){
+        if(strpos($requestContentType,'application/json') !== false) || {
             $response = $this-&gt;encodeJson($data);
             echo $response;
         } else if(strpos($requestContentType,'text/html') !== false){
@@ -1010,14 +1014,17 @@ class GreetingHandler extends SimpleRest {
         } else if(strpos($requestContentType,'application/xml') !== false){
             $response = $this-&gt;encodeXml($data);
             echo $response;
+        } else if(strpos($requestContentType,'*/*') !== false) {
+            $response = $this-&gt;encodeJson($data);
+            echo $response;
         }
     }
 
     public function encodeHtml($responseData) {
-
         $htmlResponse = &quot;&lt;table border='1'&gt;&quot;;
+        $htmlResponse .= &quot;&lt;tr&gt;&lt;th&gt;id&lt;/th&gt;&lt;th&gt;texte&lt;/th&gt;&lt;th&gt;langue&lt;/th&gt;&lt;/tr&gt;&quot;;
         foreach($responseData as $key=&gt;$value) {
-                $htmlResponse .= &quot;&lt;tr&gt;&lt;td&gt;&quot;. $key. &quot;&lt;/td&gt;&lt;td&gt;&quot;. $value. &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+                $htmlResponse .= &quot;&lt;tr&gt;&lt;td&gt;&quot;. $value[&quot;id&quot;] . &quot;&lt;/td&gt;&lt;td&gt;&quot;. $value[&quot;texte&quot;] . &quot;&lt;/td&gt;&lt;td&gt;&quot; . $value[&quot;langue&quot;] . &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
         }
         $htmlResponse .= &quot;&lt;/table&gt;&quot;;
         return $htmlResponse;       
