@@ -910,8 +910,10 @@ class SimpleRest {
         $statusMessage = $this -&gt; getHttpStatusMessage($statusCode);
 
         header($this-&gt;httpVersion. &quot; &quot;. $statusCode .&quot; &quot;. $statusMessage);      
+
+        $contentType = strpos($contentType,'text/html') !== false ? &quot;X-Content-Type-Options: nosniff&quot; : $contentType;
+
         header(&quot;Content-Type:&quot;. $contentType);
-        header(&quot;Content-Type:&quot;. &quot;X-Content-Type-Options: nosniff&quot;);
     }
 
     public function getHttpStatusMessage($statusCode){
