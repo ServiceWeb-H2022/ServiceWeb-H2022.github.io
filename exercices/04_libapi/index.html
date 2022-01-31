@@ -517,6 +517,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
+    Structure du projet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#premiere-partie" class="md-nav__link">
     Première partie
   </a>
@@ -581,6 +588,13 @@
         <li class="md-nav__item">
   <a href="#test-de-linstallation" class="md-nav__link">
     Test de l'installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-du-projet" class="md-nav__link">
+    Structure du projet
   </a>
   
 </li>
@@ -656,6 +670,54 @@
     &quot;email&quot; : &quot;[email]&quot;
 }
 </code></pre>
+<h2 id="structure-du-projet">Structure du projet</h2>
+<ul>
+<li><strong>/config</strong></li>
+<li><strong>Bootstrap.php</strong><ul>
+<li>Point d’entrée</li>
+</ul>
+</li>
+<li><strong>Routes.php</strong><ul>
+<li>C’est ici qu’on va définir les routes </li>
+</ul>
+</li>
+<li><strong>Settings.php</strong><ul>
+<li>Constantes de configuration. Par exemple les informations pour se connecter à la bd</li>
+</ul>
+</li>
+<li><strong>Container.php</strong><ul>
+<li>Fonctions “injectées” dans le constructeur.</li>
+</ul>
+</li>
+<li>
+<p><strong>Middleware.php</strong></p>
+<ul>
+<li>Code qui s’execute automatiquement avant ou après les requêtes. (Authentication)</li>
+</ul>
+</li>
+<li>
+<p><strong>/src</strong></p>
+</li>
+<li><strong>/action</strong><ul>
+<li>Les controlleurs, un fichier par “action”</li>
+</ul>
+</li>
+<li><strong>/domain</strong><ul>
+<li><strong>/user</strong></li>
+<li>Séparer la logique application de l’accès aux données</li>
+<li><strong>/Repository</strong><ul>
+<li>Accès aux données</li>
+</ul>
+</li>
+<li><strong>/Service</strong><ul>
+<li>Logique de l’api.</li>
+<li>Chaque classe doit n’avoir qu’une seule responsabilitée</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>La route appelle une classe action, ensuite le bon service est appelé. Le service va chercher les données avec la classe repository correspondante.</p>
 <h2 id="premiere-partie">Première partie</h2>
 <p>Créez les routes suivantes pour compléter la gestion des utilisateurs : </p>
 <table>
