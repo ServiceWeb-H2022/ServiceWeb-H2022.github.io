@@ -170,18 +170,11 @@
   
   
   
-    
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../../notes_de_cours/revision_php/" class="md-tabs__link">
+      <a href="../../notes_de_cours/bonnes_pratiques/" class="md-tabs__link">
         Notes de cours
       </a>
     </li>
-  
-
   
 
       
@@ -289,22 +282,50 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../notes_de_cours/bonnes_pratiques/" class="md-nav__link">
+        Les bonnes pratiques dans la conception d'un API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes_de_cours/documentation_api/" class="md-nav__link">
+        Documentation de l'API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2_1">
+        <label class="md-nav__link" for="__nav_2_3">
           PHP
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="PHP" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_1">
+        <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
           PHP
         </label>
@@ -340,18 +361,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2_2">
+        <label class="md-nav__link" for="__nav_2_4">
           SLIM
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="SLIM" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
+        <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
           SLIM
         </label>
@@ -524,9 +545,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    Exercice
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#premiere-partie" class="md-nav__link">
     Première partie
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deuxieme-partie" class="md-nav__link">
+    Deuxième partie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-partie" class="md-nav__link">
+    Troisième partie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -600,9 +648,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    Exercice
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#premiere-partie" class="md-nav__link">
     Première partie
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deuxieme-partie" class="md-nav__link">
+    Deuxième partie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-partie" class="md-nav__link">
+    Troisième partie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -630,6 +705,7 @@
 <ul>
 <li>Cloner le dépot suivant à la racine de votre répertoire "localhost" de Ampps (par défaut ça sera C:\Program Files\Ampps\www ) : <a href="https://github.com/ServiceWeb-H2022/base-slim-skeleton">https://github.com/ServiceWeb-H2022/base-slim-skeleton</a></li>
 <li>Renommez le répertoire créé (base-slim-skeleton) pour <strong>libapi</strong>.</li>
+<li>Roulez la commande <code>composer update</code> dans le répertoire de votre projet.</li>
 <li>Créez une base de données nommée aussi <strong>libapi</strong></li>
 <li>Modifier les informations de connexion à la base de données dans le fichier config/settings.php.</li>
 <li>Rouler le script ressource/createUserTable.sql dans la base de données crée pour tester la création d'un usager.</li>
@@ -718,7 +794,8 @@
 </li>
 </ul>
 <p>La route appelle une classe action, ensuite le bon service est appelé. Le service va chercher les données avec la classe repository correspondante.</p>
-<h2 id="premiere-partie">Première partie</h2>
+<h2 id="exercice">Exercice</h2>
+<h3 id="premiere-partie">Première partie</h3>
 <p>Créez les routes suivantes pour compléter la gestion des utilisateurs : </p>
 <table>
 <thead>
@@ -754,6 +831,19 @@
 <ul>
 <li>Pour chaque route, créez une classe "action", "service" et "repository". </li>
 <li>Testez ensuite vos routes avec Postman.</li>
+</ul>
+<h3 id="deuxieme-partie">Deuxième partie</h3>
+<p>Créez la documentation pour les routes déjà existantes. À partir de maintenant, pour chaque route que nous allons ajouter, on va créer en même temps la documentation. </p>
+<ul>
+<li>Renommez le fichier de documentation <code>resources/docs/base_slim_skeleton_v1.yaml</code> pour <code>libapi.yaml</code>. C'est dans ce fichier que vous allez écrire la documentation. Il y a déjà une partie de fait pour les routes qui était déjà présente.</li>
+<li>Modifiez le code du fichier <code>src/Action/Docs/SwaggerUiAction.php</code> pour que la variable <code>$yamlFile</code> fasse référence à votre fichier renommé. </li>
+<li>En vous inspirant de ce qui est déjà présent dans le fichier de documentation et du site <a href="https://swagger.io/docs/specification/about/">swagger.io</a>, rédigez la documentation pour les 4 routes que vous avez créé dans la première partie.</li>
+<li>Une fois terminé elle devrait apparaitre dans la page affiché quand vous utilisez la route <code>/</code></li>
+</ul>
+<h3 id="troisieme-partie">Troisième partie</h3>
+<p>À l'aide des notes de cours sur les bonnes pratiques de conception d'un api, révisez ce que vous avez fait jusqu'à maintenant et apporter des corrections à votre projet si nécessaire.</p>
+<ul>
+<li>Ajouter les options de filtre, tri, sélection de champs et de pagination seulement pour la route <code>GET /users</code></li>
 </ul>
 
               
