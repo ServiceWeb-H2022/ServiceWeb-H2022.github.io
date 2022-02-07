@@ -545,11 +545,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
-    Exercice
+  <a href="#exercices" class="md-nav__link">
+    Exercices
   </a>
   
-    <nav class="md-nav" aria-label="Exercice">
+    <nav class="md-nav" aria-label="Exercices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -570,6 +570,33 @@
   <a href="#troisieme-partie" class="md-nav__link">
     Troisième partie
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quatrieme-partie" class="md-nav__link">
+    Quatrième partie
+  </a>
+  
+    <nav class="md-nav" aria-label="Quatrième partie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afficher-la-liste-de-tous-les-livres" class="md-nav__link">
+    Afficher la liste de tous les livres
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-la-description-dun-livre" class="md-nav__link">
+    Afficher la description d'un livre
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -648,11 +675,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
-    Exercice
+  <a href="#exercices" class="md-nav__link">
+    Exercices
   </a>
   
-    <nav class="md-nav" aria-label="Exercice">
+    <nav class="md-nav" aria-label="Exercices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -673,6 +700,33 @@
   <a href="#troisieme-partie" class="md-nav__link">
     Troisième partie
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quatrieme-partie" class="md-nav__link">
+    Quatrième partie
+  </a>
+  
+    <nav class="md-nav" aria-label="Quatrième partie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afficher-la-liste-de-tous-les-livres" class="md-nav__link">
+    Afficher la liste de tous les livres
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-la-description-dun-livre" class="md-nav__link">
+    Afficher la description d'un livre
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -794,7 +848,7 @@
 </li>
 </ul>
 <p>La route appelle une classe action, ensuite le bon service est appelé. Le service va chercher les données avec la classe repository correspondante.</p>
-<h2 id="exercice">Exercice</h2>
+<h2 id="exercices">Exercices</h2>
 <h3 id="premiere-partie">Première partie</h3>
 <p>Créez les routes suivantes pour compléter la gestion des utilisateurs : </p>
 <table>
@@ -845,6 +899,83 @@
 <ul>
 <li>Ajouter les options de filtre, tri, sélection de champs et de pagination seulement pour la route <code>GET /users</code></li>
 </ul>
+<h3 id="quatrieme-partie">Quatrième partie</h3>
+<p>Dans le répertoire <code>resources/sql</code> vous devriez avoir un fichier nommé <strong>books_insert_data.zip</strong>. S'il n'est pas présent vous pouvez le récupérer depuis le liens suivant : <a href="https://github.com/ServiceWeb-H2022/base-slim-skeleton/blob/main/resources/sql/books_insert_data.zip">books_insert_data.zip</a>. Le fichier contient deux scripts SQL à exécuter, un de création de la table books et un autre d'insertion de données dans cette table. Une fois les données importées, ajoutez les routes suivantes à votre API</p>
+<h4 id="afficher-la-liste-de-tous-les-livres">Afficher la liste de tous les livres</h4>
+<table>
+<thead>
+<tr>
+<th>Méthode</th>
+<th>Route</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/livres</td>
+<td>Liste de tous les livres</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Vous devez ajouter une pagination à la route. L'usager doit pouvoir entrer le numéro de page qu'il souhaite, s'il n'entre rien la page 1 sera affichée par défaut. Le nombre de livre à afficher par page est de 20 et vous devez commencer au premier enregistrement. Ex : <code>/livres?page=2</code> affichera les livres 21 à 40.</li>
+<li>Par défaut la liste sera afficher par ordre alphabétique selon le <strong>titre</strong> du livre, permettez de pouvoir afficher la liste selon un tri alphabétique inversé.</li>
+<li>La réponse devra être en format JSON et respecter la structure suivante : </li>
+</ul>
+<pre><code class="language-json">{
+    &quot;livres&quot; : [
+        {
+            &quot;id&quot; : &quot;24876258&quot;,
+            &quot;title&quot; : &quot;The Aeronaut's Windlass&quot;,
+            &quot;serie&quot; : &quot;(The Cinder Spires #1)&quot;,
+            &quot;cover_link&quot; : &quot;https://i.gr-assets.com/images/S/compressed.ph...&quot;,
+            &quot;author&quot; : &quot;Jim Butcher&quot;,
+            &quot;average_rating&quot; : &quot;4,17&quot;,
+            &quot;isbn&quot; : &quot;0451466802&quot;,
+            &quot;isbn13&quot; : &quot;9780451466808&quot;
+        },
+        {
+            ...
+        }
+    ],
+    &quot;page&quot; : 1,
+    &quot;page_total&quot; : 247   
+}
+</code></pre>
+<h4 id="afficher-la-description-dun-livre">Afficher la description d'un livre</h4>
+<table>
+<thead>
+<tr>
+<th>Méthode</th>
+<th>Route</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/livres/[id]/description</td>
+<td>Affiche la description d'un livre selon son id</td>
+</tr>
+</tbody>
+</table>
+<p>La route doit permettre d'afficher la description d'un livre selon son id. Si le id n'existe pas, le code de statut 404 doit être retourné et un message d'erreur dans la réponse.</p>
+<p>Format de la réponse quand le id existe : </p>
+<pre><code class="language-json">{
+    &quot;id&quot; : &quot;24876258&quot;,
+    &quot;title&quot; : &quot;The Aeronaut's Windlass&quot;,
+    &quot;description&quot; : &quot;Jim Butcher, the #1 New York Times bestselling author ...&quot;
+}
+</code></pre>
+<p>Format de la réponse si le id n'existe pas : </p>
+<pre><code class="language-json">{
+    &quot;errors&quot; : {
+        &quot;code&quot; : &quot;404&quot;,
+        &quot;message&quot; : &quot;Le id [id] n'existe pas&quot;
+    }
+}
+</code></pre>
 
               
             </article>
