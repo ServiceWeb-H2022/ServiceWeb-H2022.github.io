@@ -820,8 +820,9 @@ https://monApi/createUtilisateurs
 </tr>
 </tbody>
 </table>
-<p>On ne doit jamais modifier une ressource avec une action GET. Les actions de modification PUT et PATCH sont très similaires, la différence est que PUT est utilisé pour modifier toutes les valeurs de la ressource alors que PATCH l'es pour une modification partielle. Prenons l'exemple suivant, on veut pouvoir modifier un utilisateur ayant ces informations </p>
+<p>On ne doit jamais modifier une ressource avec une action GET. Les actions de modification PUT et PATCH sont très similaires, la différence est que PUT est utilisé pour modifier toutes les valeurs de la ressource alors que PATCH l'est pour une modification partielle. Autre distinction de PUT, si la ressource n'est pas trouvé, elle sera créée. Prenons l'exemple suivant, on veut pouvoir modifier un utilisateur ayant ces informations </p>
 <pre><code class="language-json">{
+    &quot;id&quot; : &quot;1&quot;,
     &quot;username&quot; : &quot;[username]&quot;,
     &quot;first_name&quot; : &quot;[first_name]&quot;,
     &quot;last_name&quot; : &quot;[last_name]&quot;,
@@ -895,7 +896,17 @@ https://monApi/createUtilisateurs
 <td>404 Not Found - La ressource n'a pas été trouvée, ex: le id utilisateur est invalide.</td>
 </tr>
 <tr>
-<td>PUT / PATCH</td>
+<td>PUT</td>
+<td>405 Method Not Allowed - On ne devrait pas permettre de modifier toutes les ressources en une action</td>
+<td>200 OK - La ressource est modifiée et est retournée dans la réponse.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>201 Created - La ressource a été créé car elle etait inexistante.</td>
+</tr>
+<tr>
+<td>PATCH</td>
 <td>405 Method Not Allowed - On ne devrait pas permettre de modifier toutes les ressources en une action</td>
 <td>200 OK - La ressource est modifiée et est retournée dans la réponse.</td>
 </tr>
@@ -971,9 +982,14 @@ https://monApi/createUtilisateurs
 <p>Il n'est pas rare qu'une ressource comporte plusieurs centaines sinon milliers d'enregistrement. On devrait permettre au client de pouvoir sélectionner seulement une partie des enregistrements en définissant un point de départ (offset) et un nombre d'enregistrement (limit). Si on utilise la pagination, on devrait définir des valeurs par défaut au paramètre offset et limit (généralement offset sera égale à 0 pour le premier enregistrement). </p>
 <p>Exemple : </p>
 <ul>
-<li><code>livres?limit=50&amp;offset=100</code> En partant du centième enregistrement, affiche les 50 livres suivants.</li>
+<li><code>/livres?limit=50&amp;offset=100</code> En partant du centième enregistrement, affiche les 50 livres suivants.</li>
 </ul>
 <p>Pour faciliter le traitement des données, on devrait ajouter dans la réponse le nombre total d'enregistrements ainsi que les valeurs de limit et offset.</p>
+<p>Une autre technique est d'avoir un nombre d'enregistrement fixe par page et de seulement permettre à l'usager de choisir la page qu'il veut afficher. Exemple, on décide d'afficher 30 enregistrements par page, l'url suivant va afficher les enregistrement 61 à 90 : </p>
+<ul>
+<li><code>/livres?page=3</code></li>
+</ul>
+<p>On peut bien sur combiner les deux méthodes comme c'est souvent le cas dans les sites d'achats en lignes (On peut choisir la page et le nombre d'articles affichés par page).</p>
 <h2 id="source">Source</h2>
 <ul>
 <li><a href="https://www.moesif.com/blog/api-guide/api-design-guidelines/">https://www.moesif.com/blog/api-guide/api-design-guidelines/</a></li>
