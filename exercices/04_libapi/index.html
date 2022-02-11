@@ -170,11 +170,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../notes_de_cours/bonnes_pratiques/" class="md-tabs__link">
+      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-tabs__link">
         Notes de cours
       </a>
     </li>
+  
+
   
 
       
@@ -282,8 +289,34 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/bonnes_pratiques/" class="md-nav__link">
+      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-nav__link">
         Les bonnes pratiques dans la conception d'un API
       </a>
     </li>
@@ -297,9 +330,16 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/documentation_api/" class="md-nav__link">
+      <a href="../../notes_de_cours/api/documentation_api/" class="md-nav__link">
         Documentation de l'API
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -314,18 +354,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2_3">
+        <label class="md-nav__link" for="__nav_2_2">
           PHP
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="PHP" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
+        <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           PHP
         </label>
@@ -337,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/revision_php/" class="md-nav__link">
+      <a href="../../notes_de_cours/php/revision_php/" class="md-nav__link">
         Revision PHP
       </a>
     </li>
@@ -361,18 +401,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2_4">
+        <label class="md-nav__link" for="__nav_2_3">
           SLIM
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="SLIM" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_4">
+        <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
           SLIM
         </label>
@@ -384,7 +424,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/slim_recuperer_params/" class="md-nav__link">
+      <a href="../../notes_de_cours/slim/monolog/" class="md-nav__link">
+        Utilisation de journaux d'évènements (Log files)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes_de_cours/slim/recuperer_params/" class="md-nav__link">
         Récupérer les paramètres d'une requête HTTP
       </a>
     </li>
@@ -600,6 +654,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#cinquieme-partie" class="md-nav__link">
+    Cinquième partie
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -730,6 +791,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#cinquieme-partie" class="md-nav__link">
+    Cinquième partie
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -762,7 +830,7 @@
 <li>Roulez la commande <code>composer update</code> dans le répertoire de votre projet.</li>
 <li>Créez une base de données nommée aussi <strong>libapi</strong></li>
 <li>Modifier les informations de connexion à la base de données dans le fichier config/settings.php.</li>
-<li>Rouler le script ressource/createUserTable.sql dans la base de données crée pour tester la création d'un usager.</li>
+<li>Rouler le script <code>ressource/sql/createUserTable.sql</code> dans la base de données crée pour tester la création d'un usager.</li>
 </ul>
 <h2 id="test-de-linstallation">Test de l'installation</h2>
 <p>Vous devriez avoir accès maintenant aux routes suivantes. Testez les avec Postman et un navigateur pour la route de la documentation.</p>
@@ -928,7 +996,7 @@
         {
             &quot;id&quot; : &quot;24876258&quot;,
             &quot;title&quot; : &quot;The Aeronaut's Windlass&quot;,
-            &quot;serie&quot; : &quot;(The Cinder Spires #1)&quot;,
+            &quot;series&quot; : &quot;(The Cinder Spires #1)&quot;,
             &quot;cover_link&quot; : &quot;https://i.gr-assets.com/images/S/compressed.ph...&quot;,
             &quot;author&quot; : &quot;Jim Butcher&quot;,
             &quot;average_rating&quot; : &quot;4,17&quot;,
@@ -976,6 +1044,31 @@
     }
 }
 </code></pre>
+<h3 id="cinquieme-partie">Cinquième partie</h3>
+<p>Avant de continuer, faites un commit des modifications que vous avez apporté à votre projet jusqu'à maintenant : </p>
+<ul>
+<li>Le message du commit doit être "Exercice 04 partie 4 terminé"</li>
+<li>Faites un push du commit sur votre dépôt GitHub</li>
+<li>Créer maintenant une branche à votre projet nommée <code>Exercice04-5</code>.</li>
+</ul>
+<p>À l'aide des notes de cours sur l'utilisation de Monolog, faites en sorte qu'à chaque fois qu'on modifie un usager, un message d'événement s'inscrit dans un fichier de log avec les configurations suivantes : </p>
+<ul>
+<li>Nom du fichier de log : <strong>usersLog</strong></li>
+<li>Identification du message : <strong>updateUser</strong></li>
+<li>Niveau de sévérité : <strong>INFO</strong></li>
+<li>Message : "L'usager <strong>username</strong> a été modifié : {<strong>les nouvelles valeur de l'usager</strong>}"</li>
+</ul>
+<p>Exemple de résultat</p>
+<pre><code>[2022-02-11T06:43:08.169802+01:00] updateUser.INFO: L'usager mathProf a été modifié : {&quot;username&quot; : &quot;mathProf&quot;,&quot;first_name&quot; : &quot;Mathieu&quot;,&quot;last_name&quot; : &quot;Fréchette&quot;,&quot;email&quot; : &quot;frechette.mathieu@cegepvicto.ca&quot;
+}
+</code></pre>
+<p>Une fois terminé, fusionner votre branche au projet principal en suivant ces étapes : </p>
+<ul>
+<li>Faites un commit des modifications avec le message "Exercice 04 partie 5 terminé"</li>
+<li>Changer de branche pour revenir à la branche principale</li>
+<li>Fusionner la branche <code>Exercice04-5</code> dans la branche principale</li>
+<li>Faites un push du commit sur votre dépôt GitHub</li>
+</ul>
 
               
             </article>
