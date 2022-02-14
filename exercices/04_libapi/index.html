@@ -24,10 +24,6 @@
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
-          
-          
-          <meta name="theme-color" content="#2094f3">
-        
       
     
     
@@ -51,12 +47,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="light-green">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -105,6 +105,28 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -424,6 +446,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../notes_de_cours/slim/middleware/" class="md-nav__link">
+        Middleware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../notes_de_cours/slim/monolog/" class="md-nav__link">
         Utilisation de journaux d'évènements (Log files)
       </a>
@@ -607,56 +643,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#premiere-partie" class="md-nav__link">
-    Première partie
+  <a href="#premiere-partie-routes" class="md-nav__link">
+    Première partie - Routes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deuxieme-partie" class="md-nav__link">
-    Deuxième partie
+  <a href="#deuxieme-partie-documentation" class="md-nav__link">
+    Deuxième partie - Documentation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#troisieme-partie" class="md-nav__link">
-    Troisième partie
+  <a href="#troisieme-partie-filtre-tri-selection-et-pagination" class="md-nav__link">
+    Troisième partie - Filtre, tri, sélection et pagination
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quatrieme-partie" class="md-nav__link">
-    Quatrième partie
-  </a>
-  
-    <nav class="md-nav" aria-label="Quatrième partie">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#afficher-la-liste-de-tous-les-livres" class="md-nav__link">
-    Afficher la liste de tous les livres
+  <a href="#quatrieme-partie-revision-et-formatage-de-la-reponse" class="md-nav__link">
+    Quatrième partie - Révision et formatage de la réponse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#afficher-la-description-dun-livre" class="md-nav__link">
-    Afficher la description d'un livre
+  <a href="#cinquieme-partie-utilisation-de-monolog" class="md-nav__link">
+    Cinquième partie - Utilisation de Monolog
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#cinquieme-partie" class="md-nav__link">
-    Cinquième partie
+  <a href="#sixieme-partie-middleware" class="md-nav__link">
+    Sixième partie - Middleware
   </a>
   
 </li>
@@ -744,56 +767,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#premiere-partie" class="md-nav__link">
-    Première partie
+  <a href="#premiere-partie-routes" class="md-nav__link">
+    Première partie - Routes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deuxieme-partie" class="md-nav__link">
-    Deuxième partie
+  <a href="#deuxieme-partie-documentation" class="md-nav__link">
+    Deuxième partie - Documentation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#troisieme-partie" class="md-nav__link">
-    Troisième partie
+  <a href="#troisieme-partie-filtre-tri-selection-et-pagination" class="md-nav__link">
+    Troisième partie - Filtre, tri, sélection et pagination
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quatrieme-partie" class="md-nav__link">
-    Quatrième partie
-  </a>
-  
-    <nav class="md-nav" aria-label="Quatrième partie">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#afficher-la-liste-de-tous-les-livres" class="md-nav__link">
-    Afficher la liste de tous les livres
+  <a href="#quatrieme-partie-revision-et-formatage-de-la-reponse" class="md-nav__link">
+    Quatrième partie - Révision et formatage de la réponse
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#afficher-la-description-dun-livre" class="md-nav__link">
-    Afficher la description d'un livre
+  <a href="#cinquieme-partie-utilisation-de-monolog" class="md-nav__link">
+    Cinquième partie - Utilisation de Monolog
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#cinquieme-partie" class="md-nav__link">
-    Cinquième partie
+  <a href="#sixieme-partie-middleware" class="md-nav__link">
+    Sixième partie - Middleware
   </a>
   
 </li>
@@ -917,7 +927,7 @@
 </ul>
 <p>La route appelle une classe action, ensuite le bon service est appelé. Le service va chercher les données avec la classe repository correspondante.</p>
 <h2 id="exercices">Exercices</h2>
-<h3 id="premiere-partie">Première partie</h3>
+<h3 id="premiere-partie-routes">Première partie - Routes</h3>
 <p>Créez les routes suivantes pour compléter la gestion des utilisateurs : </p>
 <table>
 <thead>
@@ -954,7 +964,7 @@
 <li>Pour chaque route, créez une classe "action", "service" et "repository". </li>
 <li>Testez ensuite vos routes avec Postman.</li>
 </ul>
-<h3 id="deuxieme-partie">Deuxième partie</h3>
+<h3 id="deuxieme-partie-documentation">Deuxième partie - Documentation</h3>
 <p>Créez la documentation pour les routes déjà existantes. À partir de maintenant, pour chaque route que nous allons ajouter, on va créer en même temps la documentation. </p>
 <ul>
 <li>Renommez le fichier de documentation <code>resources/docs/base_slim_skeleton_v1.yaml</code> pour <code>libapi.yaml</code>. C'est dans ce fichier que vous allez écrire la documentation. Il y a déjà une partie de fait pour les routes qui était déjà présente.</li>
@@ -962,14 +972,14 @@
 <li>En vous inspirant de ce qui est déjà présent dans le fichier de documentation et du site <a href="https://swagger.io/docs/specification/about/">swagger.io</a>, rédigez la documentation pour les 4 routes que vous avez créé dans la première partie.</li>
 <li>Une fois terminé elle devrait apparaitre dans la page affiché quand vous utilisez la route <code>/</code></li>
 </ul>
-<h3 id="troisieme-partie">Troisième partie</h3>
+<h3 id="troisieme-partie-filtre-tri-selection-et-pagination">Troisième partie - Filtre, tri, sélection et pagination</h3>
 <p>À l'aide des notes de cours sur les bonnes pratiques de conception d'un api, révisez ce que vous avez fait jusqu'à maintenant et apporter des corrections à votre projet si nécessaire.</p>
 <ul>
 <li>Ajouter les options de filtre, tri, sélection de champs et de pagination seulement pour la route <code>GET /users</code></li>
 </ul>
-<h3 id="quatrieme-partie">Quatrième partie</h3>
+<h3 id="quatrieme-partie-revision-et-formatage-de-la-reponse">Quatrième partie - Révision et formatage de la réponse</h3>
 <p>Dans le répertoire <code>resources/sql</code> vous devriez avoir un fichier nommé <strong>books_insert_data.zip</strong>. S'il n'est pas présent vous pouvez le récupérer depuis le liens suivant : <a href="https://github.com/ServiceWeb-H2022/base-slim-skeleton/blob/main/resources/sql/books_insert_data.zip">books_insert_data.zip</a>. Le fichier contient deux scripts SQL à exécuter, un de création de la table books et un autre d'insertion de données dans cette table. Une fois les données importées, ajoutez les routes suivantes à votre API</p>
-<h4 id="afficher-la-liste-de-tous-les-livres">Afficher la liste de tous les livres</h4>
+<p><strong>Afficher la liste de tous les livres</strong></p>
 <table>
 <thead>
 <tr>
@@ -1011,7 +1021,7 @@
     &quot;page_total&quot; : 247   
 }
 </code></pre>
-<h4 id="afficher-la-description-dun-livre">Afficher la description d'un livre</h4>
+<p><strong>Afficher la description d'un livre</strong></p>
 <table>
 <thead>
 <tr>
@@ -1044,7 +1054,7 @@
     }
 }
 </code></pre>
-<h3 id="cinquieme-partie">Cinquième partie</h3>
+<h3 id="cinquieme-partie-utilisation-de-monolog">Cinquième partie - Utilisation de Monolog</h3>
 <p>Avant de continuer, faites un commit des modifications que vous avez apporté à votre projet jusqu'à maintenant : </p>
 <ul>
 <li>Le message du commit doit être "Exercice 04 partie 4 terminé"</li>
@@ -1068,6 +1078,49 @@
 <li>Changer de branche pour revenir à la branche principale</li>
 <li>Fusionner la branche <code>Exercice04-5</code> dans la branche principale</li>
 <li>Faites un push du commit sur votre dépôt GitHub</li>
+</ul>
+<h3 id="sixieme-partie-middleware">Sixième partie - Middleware</h3>
+<p>Faites le nécessaire pour qu'à <u>chaque requête</u> HTTP vers votre projet, les informations suivantes soit inscrite dans un fichier de log : </p>
+<ul>
+<li>L'identificateur de la ligne sera <strong>RouteLogMiddleware</strong></li>
+<li>Le niveau de sévérité est <strong>INFO</strong></li>
+<li>Ensuite ajoutez la méthode HTTP (GET, POST, PUT, PATCH, DELETE) utilisée</li>
+<li>Suivra le nom de la route, les paramètres de la section "query" s'il y en a et le contenu du body</li>
+</ul>
+<p><strong>Exemple</strong></p>
+<pre><code>[2022-01-30T13:44:25.145185-05:00] RouteLogMiddleware.INFO: GET /libapi/docs
+[2022-01-30T13:44:25.145185-05:00] RouteLogMiddleware.INFO: GET /libapi/livres?page=3
+[2022-02-14T06:49:19.833744+01:00] RouteLogMiddleware.INFO: GET /libapi/ {&quot;cle1&quot;:&quot;Valeur1&quot;,&quot;cle2&quot;:&quot;Valeur2&quot;}  
+</code></pre>
+<p><strong>Quelques pistes de solution</strong></p>
+<ul>
+<li>Créer un fichier php dans le répertoire src/Middleware qui contiendra votre code</li>
+<li>Invoquer cette classe au niveau de l'application</li>
+<li>Dans votre classe "middleware", la structure de la fonction <code>__invoke()</code> devrait ressembler à ceci : </li>
+</ul>
+<pre><code class="language-php">public function __invoke(
+    Request $request, 
+    RequestHandler $handler): Response
+{
+    // Cette ligne exécute la requête
+    $response = $handler-&gt;handle($request);
+
+    // Votre code ...
+
+    return $response;
+}
+</code></pre>
+<p>Pour récupérer les informations générales de la route</p>
+<ul>
+<li><a href="https://www.slimframework.com/docs/v4/cookbook/retrieving-current-route.html">https://www.slimframework.com/docs/v4/cookbook/retrieving-current-route.html</a></li>
+</ul>
+<p>Pour les paramètres dans la route</p>
+<ul>
+<li><a href="https://www.slimframework.com/docs/v4/objects/request.html#the-request-uri">https://www.slimframework.com/docs/v4/objects/request.html#the-request-uri</a></li>
+</ul>
+<p>Pour le contenu du body, on l'a déjà vu quand on le récupère pour traiter un requête POST.</p>
+<ul>
+<li><a href="https://www.slimframework.com/docs/v3/objects/request.html#the-request-body">https://www.slimframework.com/docs/v3/objects/request.html#the-request-body</a></li>
 </ul>
 
               
