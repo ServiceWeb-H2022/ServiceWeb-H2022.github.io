@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/exercices/01_utilisation_api/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/exercices/02_revision_php/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/exercices/03_hello_world_api/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/exercices/04_libapi/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/exercices/05_heroku/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/code_statut_http/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/methode_http/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/php_methode_magique/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/reponse_requete/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/variable_environnement/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/api/bonnes_pratiques/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/api/documentation_api/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku_compte/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku_connexion/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku_creation_projet/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku_mise_en_ligne/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/heroku/heroku_mysql/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/php/revision_php/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/react/react_notes/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/slim/middleware/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/slim/monolog/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/notes_de_cours/slim/recuperer_params/</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
