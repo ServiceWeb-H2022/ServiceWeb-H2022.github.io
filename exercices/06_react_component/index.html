@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/exercices/05_heroku/">
+        <link rel="canonical" href="https://example.com/exercices/06_react_component/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
-        <title>05 - Hébergement avec Heroku - Services Web</title>
+        <title>06 - React - Composantes et props - Services Web</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-05-hebergement-dun-api-avec-heroku" class="md-skip">
+        <a href="#exercice-05-composantes-et-props" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05 - Hébergement avec Heroku
+              06 - React - Composantes et props
             
           </span>
         </div>
@@ -813,6 +813,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../05_heroku/" class="md-nav__link">
+        05 - Hébergement avec Heroku
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -824,24 +838,48 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        05 - Hébergement avec Heroku
-      </a>
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          06 - React - Composantes et props
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../06_react_component/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         06 - React - Composantes et props
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-faire-ensuite" class="md-nav__link">
+    À faire ensuite
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -873,6 +911,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-faire-ensuite" class="md-nav__link">
+    À faire ensuite
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -884,8 +944,93 @@
               
                 
 
-<h1 id="exercice-05-hebergement-dun-api-avec-heroku">Exercice 05 - Hébergement d'un api avec Heroku</h1>
-<p>En vous aidant des notes de cours, faites une mise en ligne de votre exercice 04 sur un compte Heroku. Vous devez me remettre ensuite l'url de votre api via le devoir sur Teams.</p>
+<h1 id="exercice-05-composantes-et-props">Exercice 05 - Composantes et props</h1>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Créer un nouveau projet React nommé mybooks (en minuscule).</li>
+<li>Remplacez le code du fichier <code>App.js</code> par celui-ci</li>
+</ul>
+<pre><code class="language-react">import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+
+class App extends React.Component {
+  render(){
+
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+      &lt;header className=&quot;App-header&quot;&gt;
+          &lt;h1&gt;MyBooks&lt;/h1&gt;
+
+          &lt;h3&gt;Liste des livres&lt;/h3&gt;
+
+          &lt;table className=&quot;BooksTable&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;id&lt;/th&gt;
+                &lt;th&gt;Titre&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Fondation&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Les montagnes hallucinÃ©es&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Blade Runner&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+    );
+  }
+}
+
+export default (App);
+</code></pre>
+<ul>
+<li>Au début de la fonction render() de la classe App, ajoutez le tableau suivant d'objets "livre".</li>
+</ul>
+<pre><code class="language-react">const books = [
+    {id:1, titre:'Fondation'},
+    {id:2, titre:'Les montagnes hallucinées'},
+    {id:3, titre:'Blade Runner'}
+];
+</code></pre>
+<ul>
+<li>Ajoutez les lignes suivante à la fin du fichier <code>App.css</code>  </li>
+</ul>
+<pre><code class="language-css">.BooksTable th, .BooksTable td {
+  text-align: left;
+  padding-right: 15px;
+}
+</code></pre>
+<p>Maintenant lancer l'application avec la commande <code>npm start</code> et vous devriez avoir ce résultat</p>
+<p><img alt="exercice06" src="\img\exercice06.png" /></p>
+<h2 id="a-faire-ensuite">À faire ensuite</h2>
+<ul>
+<li>
+<p>Créez les composantes suivantes en dans des fichiers séparés situés dans le répertoire <code>src/components</code></p>
+</li>
+<li>
+<p>Une composante <code>Titre</code> qui va remplacer la balise <code>&lt;h3&gt;</code> dans le fichier <code>App.js</code>. Elle recevra un paramètre <code>texte</code> qui sera le texte à afficher. La composante retournera une balise <code>&lt;h3&gt;</code> avec la valeur du paramètre reçu.</p>
+</li>
+<li>
+<p>Une composante nommée  <code>Tableau</code>. Cette composante va remplacer la balise <code>&lt;table&gt;</code> dans le fichier <code>App.js</code>. Elle recevra un paramètre <code>livres</code> qui est le tableau de livres qu’on a défini plus haut. Elle va retourner le code html pour afficher le tableau.</p>
+</li>
+<li>
+<p>Une composante <code>LigneTableau</code>. Cette composante va être utilisé dans la composante <code>Tableau</code> pour afficher une ligne du tableau. Elle recevra un paramètre <code>livre</code> qui représente un objet du tableau livres. Elle va retourner le code html pour afficher un ligne du tableau (une balise <code>&lt;tr&gt;</code> et son contenu) avec les valeurs reçues en paramètres.</p>
+</li>
+<li>
+<p>Modifiez le fichier <code>App.js</code> pour utiliser les composantes créés.</p>
+</li>
+</ul>
 
               
             </article>
@@ -904,7 +1049,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../04_libapi/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 04 - LibAPI" rel="prev">
+        <a href="../05_heroku/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 05 - Hébergement avec Heroku" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -913,26 +1058,11 @@
               <span class="md-footer__direction">
                 Précédent
               </span>
-              04 - LibAPI
+              05 - Hébergement avec Heroku
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../06_react_component/" class="md-footer__link md-footer__link--next" aria-label="Suivant: 06 - React - Composantes et props" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              06 - React - Composantes et props
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
