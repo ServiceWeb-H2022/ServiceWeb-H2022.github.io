@@ -617,6 +617,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lancer-le-projet" class="md-nav__link">
+    Lancer le projet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quitter-lapplication" class="md-nav__link">
+    Quitter l'application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     Références
   </a>
@@ -995,6 +1009,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lancer-le-projet" class="md-nav__link">
+    Lancer le projet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quitter-lapplication" class="md-nav__link">
+    Quitter l'application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     Références
   </a>
@@ -1045,6 +1073,21 @@
 <li>Certains fichiers des répertoires public et src ne sont pas nécessaire, mais <strong>src/index.js</strong> et <strong>public/index.html</strong> doivent être présent. Pour les autres, c’est selon vos besoin mais pour l’instant on va les laisser là.</li>
 </ul>
 <p><img alt="react_create_react_app" src="\img\react_create_react_app.png" /></p>
+<h2 id="lancer-le-projet">Lancer le projet</h2>
+<p>Pour lancer l'application React, entrez la commande suivante dans un terminal à la racine du projet</p>
+<pre><code class="language-bash">npm start
+</code></pre>
+<p>Attention, on ne peut avoir qu'une application React qui "roule" en même temps.</p>
+<h2 id="quitter-lapplication">Quitter l'application</h2>
+<p>Pour pouvoir fermer le serveur de développement en tout temps, on va ajouter un script dans le fichier <code>package.json</code>. Dans la section <strong>scripts</strong> ajouter la ligne suivante <code>"stop": "taskkill -F -IM node.exe"</code></p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+    ...
+    &quot;stop&quot;: &quot;taskkill -F -IM node.exe&quot; 
+  }
+</code></pre>
+<p>Pour fermer le serveur de développement et "quitter" l'application, vous n'avez qu'à faire ctrl+c dans la même fenêtre de terminal qui roule le serveur. Si vous n'avez plus accès au terminal qui à lancer le serveur, ouvrez un nouveau terminal et faites la commande </p>
+<pre><code class="language-bash">npm stop
+</code></pre>
 <h2 id="references">Références</h2>
 <ul>
 <li><a href="https://fr.reactjs.org/docs/create-a-new-react-app.html">Create React App</a></li>
