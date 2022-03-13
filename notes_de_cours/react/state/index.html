@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/notes_de_cours/react/creation_projet/">
+        <link rel="canonical" href="https://example.com/notes_de_cours/react/state/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
-        <title>Création d'un projet - Services Web</title>
+        <title>L'état local (state) - Services Web</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creation-dun-projet-react" class="md-skip">
+        <a href="#letat-local-dun-composant-state" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Création d'un projet
+              L'état local (state)
             
           </span>
         </div>
@@ -540,107 +540,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Création d'un projet
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../creation_projet/" class="md-nav__link">
         Création d'un projet
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequis" class="md-nav__link">
-    Prérequis
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialiser-notre-application" class="md-nav__link">
-    Initialiser notre application
-  </a>
-  
-    <nav class="md-nav" aria-label="Initialiser notre application">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-globale" class="md-nav__link">
-    Installation globale
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#execution-sans-installation" class="md-nav__link">
-    Exécution sans installation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-du-projet" class="md-nav__link">
-    Structure du projet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lancer-le-projet" class="md-nav__link">
-    Lancer le projet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quitter-lapplication" class="md-nav__link">
-    Quitter l'application
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    Références
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -692,11 +596,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../state/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          L'état local (state)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         L'état local (state)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modification-de-letat" class="md-nav__link">
+    Modification de l'état
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1010,63 +955,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequis" class="md-nav__link">
-    Prérequis
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialiser-notre-application" class="md-nav__link">
-    Initialiser notre application
-  </a>
-  
-    <nav class="md-nav" aria-label="Initialiser notre application">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-globale" class="md-nav__link">
-    Installation globale
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#execution-sans-installation" class="md-nav__link">
-    Exécution sans installation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-du-projet" class="md-nav__link">
-    Structure du projet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lancer-le-projet" class="md-nav__link">
-    Lancer le projet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quitter-lapplication" class="md-nav__link">
-    Quitter l'application
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    Références
+  <a href="#modification-de-letat" class="md-nav__link">
+    Modification de l'état
   </a>
   
 </li>
@@ -1084,56 +974,38 @@
               
                 
 
-<h1 id="creation-dun-projet-react">Création d'un projet React</h1>
-<p>Il y a plusieurs façon d'utiliser React dans nos application web. Dans le cadre de ce cours nous allons utiliser <strong>Create React App</strong> qui va créer pour nous on projet de "départ" à partir duquel nous pourrons construire nos application React.</p>
-<h2 id="prerequis">Prérequis</h2>
+<h1 id="letat-local-dun-composant-state">L'état local d'un composant (state)</h1>
 <ul>
-<li>node.js</li>
-<li>un terminal qui permet d'utiliser des commandes plus avancées (Git bash)</li>
+<li>Chaque composant React à un object state créé par défaut.</li>
+<li>Dans cet objet on va stocker les propriétés qui sont propre au composant. </li>
+<li>Quand l’objet change, qu’on change une de ces propriétés, le composant est réafficher dans la page.</li>
+<li>On doit initialiser les propriétés de state dans le constructeur</li>
 </ul>
-<h2 id="initialiser-notre-application">Initialiser notre application</h2>
-<p>Il y a deux façon d'utiliser <strong>Create React App</strong> : En l'installant globalement sur notre ordinateur ou en l'exécutant sans installation pour créer un projet directement. </p>
-<h3 id="installation-globale">Installation globale</h3>
-<p>Exécuter la commande suivante dans un terminal pour procéder à l'installation</p>
-<pre><code class="language-bash">npm install -g create-react-app
+<pre><code class="language-react">constructor(props) {
+    super(props);
+    this.state = {titre: this.props.titre, note: 4};
+}
 </code></pre>
-<p>Une fois l'installation terminé, vous aurez accès à la commande <code>create-react-app</code> dans n'importe quel terminal. Maintenant pour créer un projet entrez la commande suivante depuis le terminal: </p>
-<pre><code class="language-bash">create-react-app nomduprojet
-</code></pre>
-<h3 id="execution-sans-installation">Exécution sans installation</h3>
-<p>Cette méthode est à privilégier selon moi car elle nous assure de toujours utiliser la dernière version de <strong>Create React App</strong>. Notez qu'on utilise la commande <code>npx</code> et non <code>npm</code> ici. Npx va télécharger le paquet demandé, l'exécuter et ensuite le supprimer. Il ne restera aucune trace du paquet sur le disque.</p>
-<pre><code class="language-bash">npx create-react-app nomDuProjet
-</code></pre>
-<p>Peut importe la méthode que vous aurez utilisé, un répertoire nommée <strong>nomduprojet</strong> sera créé à l'endroit où la commande a été lancé avec à l'intérieur les fichiers de base de l'application React. Ensuite dans le répertoire du projet, la commande <code>npm start</code> va lancer l’application.</p>
-<h2 id="structure-du-projet">Structure du projet</h2>
 <ul>
-<li>Le point d’entrée de l’application est le fichier <strong>src/index.js</strong></li>
-<li>La page <strong>public/index.html</strong> sert quand à elle de « support » pour le projet.</li>
-<li>La majeur partie du développement de l’application se fera dans le répertoire <strong>src/</strong>.</li>
-<li>On va entre autre y créer les fichiers de composantes, idéalement dans un répertoire dédié, <strong>src/components</strong> par exemple.</li>
-<li>Le fichier <strong>app.js</strong> est le composant maitre, on peut le laisser où il est.</li>
-<li>Certains fichiers des répertoires public et src ne sont pas nécessaire, mais <strong>src/index.js</strong> et <strong>public/index.html</strong> doivent être présent. Pour les autres, c’est selon vos besoin mais pour l’instant on va les laisser là.</li>
+<li>On y fait référence avec this : <code>this.state.titre</code></li>
 </ul>
-<p><img alt="react_create_react_app" src="\img\react_create_react_app.png" /></p>
-<h2 id="lancer-le-projet">Lancer le projet</h2>
-<p>Pour lancer l'application React, entrez la commande suivante dans un terminal à la racine du projet</p>
-<pre><code class="language-bash">npm start
+<h2 id="modification-de-letat">Modification de l'état</h2>
+<p>Pour modifier la valeur de <strong>state</strong> on doit utiliser la fonction <code>setSate()</code></p>
+<pre><code class="language-react">this.setState({note: 5});
 </code></pre>
-<p>Attention, on ne peut avoir qu'une application React qui "roule" en même temps.</p>
-<h2 id="quitter-lapplication">Quitter l'application</h2>
-<p>Pour pouvoir fermer le serveur de développement en tout temps, on va ajouter un script dans le fichier <code>package.json</code>. Dans la section <strong>scripts</strong> ajouter la ligne suivante <code>"stop": "taskkill -F -IM node.exe"</code></p>
-<pre><code class="language-json">&quot;scripts&quot;: {
-    ...
-    &quot;stop&quot;: &quot;taskkill -F -IM node.exe&quot; 
-  }
+<p>On n’est pas obligé d’inclure toutes les propriétés de state, seulement celle que l’on veut changer. Par contre on ne doit pas <u><strong>modifier directement</strong></u> une valeur de l'état sinon le composant ne sera pas réaffiché.</p>
+<pre><code class="language-react">// À ne pas faire
+this.state.note = 5;
 </code></pre>
-<p>Pour fermer le serveur de développement et "quitter" l'application, vous n'avez qu'à faire ctrl+c dans la même fenêtre de terminal qui roule le serveur. Si vous n'avez plus accès au terminal qui à lancer le serveur, ouvrez un nouveau terminal et faites la commande </p>
-<pre><code class="language-bash">npm stop
+<p>La fonction <code>setState()</code> peut aussi aussi accepter une fonction en paramètre au lieu d'un objet : </p>
+<pre><code class="language-react">// Dans cet exemple on voudrait augmenter la note d'une valeur reçu en 
+// paramètre par le composant
+this.setState((state, props) =&gt; note: state.note + props.increment);
 </code></pre>
-<h2 id="references">Références</h2>
+<p><strong>Références</strong></p>
 <ul>
-<li><a href="https://fr.reactjs.org/docs/create-a-new-react-app.html">Create React App</a></li>
-<li><a href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/">npm vs npx</a></li>
+<li><a href="https://fr.reactjs.org/docs/state-and-lifecycle.html">https://fr.reactjs.org/docs/state-and-lifecycle.html</a></li>
+<li><a href="https://www.w3schools.com/react/react_state.asp">https://www.w3schools.com/react/react_state.asp</a></li>
 </ul>
 
               
@@ -1153,7 +1025,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Introduction à React" rel="prev">
+        <a href="../liste_component/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Afficher une liste de composantes identiques" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1162,20 +1034,20 @@
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Introduction à React
+              Afficher une liste de composantes identiques
             </div>
           </div>
         </a>
       
       
         
-        <a href="../component/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les composantes" rel="next">
+        <a href="../remonter_data/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Faire &#34;remonter&#34; des données" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Les composantes
+              Faire "remonter" des données
             </div>
           </div>
           <div class="md-footer__button md-icon">
