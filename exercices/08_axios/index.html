@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://example.com/notes_de_cours/heroku/heroku_mysql/">
+        <link rel="canonical" href="https://example.com/exercices/08_axios/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
-        <title>Configuration de la base de données MySQL - Services Web</title>
+        <title>08 - React - Consommer une api avec Axios - Services Web</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e60f8b8.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -36,7 +36,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-de-la-base-de-donnees-mysql" class="md-skip">
+        <a href="#exercice-08-consommer-une-api-avec-axios" class="md-skip">
           Aller au contenu
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Services Web" class="md-header__button md-logo" aria-label="Services Web" data-md-component="logo">
+    <a href="../.." title="Services Web" class="md-header__button md-logo" aria-label="Services Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg>
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration de la base de données MySQL
+              08 - React - Consommer une api avec Axios
             
           </span>
         </div>
@@ -186,7 +186,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Accueil
     </a>
   </li>
@@ -194,8 +194,6 @@
       
         
   
-  
-    
   
 
 
@@ -208,7 +206,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../api/bonnes_pratiques/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-tabs__link">
         Notes de cours
       </a>
     </li>
@@ -220,13 +218,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../exercices/01_utilisation_api/" class="md-tabs__link">
+      <a href="../01_utilisation_api/" class="md-tabs__link md-tabs__link--active">
         Exercices
       </a>
     </li>
@@ -260,7 +260,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Services Web" class="md-nav__button md-logo" aria-label="Services Web" data-md-component="logo">
+    <a href="../.." title="Services Web" class="md-nav__button md-logo" aria-label="Services Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg>
@@ -279,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Accueil
       </a>
     </li>
@@ -292,14 +292,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -348,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/bonnes_pratiques/" class="md-nav__link">
+      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-nav__link">
         Les bonnes pratiques dans la conception d'un API
       </a>
     </li>
@@ -362,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/documentation_api/" class="md-nav__link">
+      <a href="../../notes_de_cours/api/documentation_api/" class="md-nav__link">
         Documentation de l'API
       </a>
     </li>
@@ -381,14 +379,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
       
       
@@ -411,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heroku/" class="md-nav__link">
+      <a href="../../notes_de_cours/heroku/heroku/" class="md-nav__link">
         Mise en ligne avec Heroku
       </a>
     </li>
@@ -425,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heroku_compte/" class="md-nav__link">
+      <a href="../../notes_de_cours/heroku/heroku_compte/" class="md-nav__link">
         Création d'un compte Heroku
       </a>
     </li>
@@ -439,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heroku_connexion/" class="md-nav__link">
+      <a href="../../notes_de_cours/heroku/heroku_connexion/" class="md-nav__link">
         Connexion à Heroku depuis un terminal
       </a>
     </li>
@@ -453,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heroku_creation_projet/" class="md-nav__link">
+      <a href="../../notes_de_cours/heroku/heroku_creation_projet/" class="md-nav__link">
         Création d'un projet Heroku
       </a>
     </li>
@@ -467,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heroku_mise_en_ligne/" class="md-nav__link">
+      <a href="../../notes_de_cours/heroku/heroku_mise_en_ligne/" class="md-nav__link">
         Mise en ligne du projet
       </a>
     </li>
@@ -479,100 +475,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configuration de la base de données MySQL
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../notes_de_cours/heroku/heroku_mysql/" class="md-nav__link">
         Configuration de la base de données MySQL
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recuperer-des-informations-de-connexion" class="md-nav__link">
-    Récupérer des informations de connexion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importer-une-base-de-donnees" class="md-nav__link">
-    Importer une base de données
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stocker-les-informations-de-connexion" class="md-nav__link">
-    Stocker les informations de connexion
-  </a>
-  
-    <nav class="md-nav" aria-label="Stocker les informations de connexion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creation-du-fichier-envphp" class="md-nav__link">
-    Création du fichier env.php
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modification-au-fichier-bootstrapphp" class="md-nav__link">
-    Modification au fichier bootstrap.php
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modification-au-fichier-settingsphp" class="md-nav__link">
-    Modification au fichier settings.php
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    Source
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -617,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/introduction/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/introduction/" class="md-nav__link">
         Introduction à React
       </a>
     </li>
@@ -631,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/creation_projet/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/creation_projet/" class="md-nav__link">
         Création d'un projet
       </a>
     </li>
@@ -645,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/component/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/component/" class="md-nav__link">
         Les composantes
       </a>
     </li>
@@ -659,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/props/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/props/" class="md-nav__link">
         Les props
       </a>
     </li>
@@ -673,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/liste_component/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/liste_component/" class="md-nav__link">
         Afficher une liste de composantes identiques
       </a>
     </li>
@@ -687,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/state/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/state/" class="md-nav__link">
         L'état local (state)
       </a>
     </li>
@@ -701,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/remonter_data/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/remonter_data/" class="md-nav__link">
         Faire "remonter" des données
       </a>
     </li>
@@ -715,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/cycle_de_vie/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/cycle_de_vie/" class="md-nav__link">
         Cycle de vie d'une application
       </a>
     </li>
@@ -729,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/fetch_api/" class="md-nav__link">
+      <a href="../../notes_de_cours/react/fetch_api/" class="md-nav__link">
         Consommer une api avec Axios
       </a>
     </li>
@@ -776,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../php/revision_php/" class="md-nav__link">
+      <a href="../../notes_de_cours/php/revision_php/" class="md-nav__link">
         Revision PHP
       </a>
     </li>
@@ -823,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slim/middleware/" class="md-nav__link">
+      <a href="../../notes_de_cours/slim/middleware/" class="md-nav__link">
         Middleware
       </a>
     </li>
@@ -837,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slim/monolog/" class="md-nav__link">
+      <a href="../../notes_de_cours/slim/monolog/" class="md-nav__link">
         Utilisation de journaux d'évènements (Log files)
       </a>
     </li>
@@ -851,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../slim/recuperer_params/" class="md-nav__link">
+      <a href="../../notes_de_cours/slim/recuperer_params/" class="md-nav__link">
         Récupérer les paramètres d'une requête HTTP
       </a>
     </li>
@@ -878,12 +785,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -906,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/01_utilisation_api/" class="md-nav__link">
+      <a href="../01_utilisation_api/" class="md-nav__link">
         01 - Consommer une api
       </a>
     </li>
@@ -920,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/02_revision_php/" class="md-nav__link">
+      <a href="../02_revision_php/" class="md-nav__link">
         02 - Revision PHP
       </a>
     </li>
@@ -934,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/03_hello_world_api/" class="md-nav__link">
+      <a href="../03_hello_world_api/" class="md-nav__link">
         03 - HelloWorldApi
       </a>
     </li>
@@ -948,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/04_libapi/" class="md-nav__link">
+      <a href="../04_libapi/" class="md-nav__link">
         04 - LibAPI
       </a>
     </li>
@@ -962,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/05_heroku/" class="md-nav__link">
+      <a href="../05_heroku/" class="md-nav__link">
         05 - Hébergement avec Heroku
       </a>
     </li>
@@ -976,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/06_react_component/" class="md-nav__link">
+      <a href="../06_react_component/" class="md-nav__link">
         06 - React - Composants et props
       </a>
     </li>
@@ -990,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/07_react_state/" class="md-nav__link">
+      <a href="../07_react_state/" class="md-nav__link">
         07 - React - L'état local
       </a>
     </li>
@@ -1002,11 +911,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../exercices/08_axios/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          08 - React - Consommer une api avec Axios
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         08 - React - Consommer une api avec Axios
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1045,56 +995,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recuperer-des-informations-de-connexion" class="md-nav__link">
-    Récupérer des informations de connexion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#importer-une-base-de-donnees" class="md-nav__link">
-    Importer une base de données
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stocker-les-informations-de-connexion" class="md-nav__link">
-    Stocker les informations de connexion
-  </a>
-  
-    <nav class="md-nav" aria-label="Stocker les informations de connexion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creation-du-fichier-envphp" class="md-nav__link">
-    Création du fichier env.php
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modification-au-fichier-bootstrapphp" class="md-nav__link">
-    Modification au fichier bootstrap.php
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modification-au-fichier-settingsphp" class="md-nav__link">
-    Modification au fichier settings.php
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    Source
+  <a href="#instructions" class="md-nav__link">
+    Instructions
   </a>
   
 </li>
@@ -1112,158 +1014,23 @@
               
                 
 
-<h1 id="configuration-de-la-base-de-donnees-mysql">Configuration de la base de données MySQL</h1>
-<p>Pour permettre l'utilisation d'une base de donnée MySQL avec Heroku, il faut ajouter l'<em>Add-on</em> <strong>ClearDB</strong> à notre projet.</p>
+<h1 id="exercice-08-consommer-une-api-avec-axios">Exercice 08 - Consommer une api avec Axios</h1>
+<p>En vous inspirant de l'affichage présenté sur le site <a href="https://randomuser.me/">https://randomuser.me/</a>, créez une application React qui affichera certaines informations d'un utilisateur obtenu grâce à un appel à l'api du même site.</p>
+<h2 id="instructions">Instructions</h2>
 <ul>
-<li>Accédez à la section <strong>account settings</strong> sur le site de heroku (cliquez sur la photo de profil pour ouvrir le menu)</li>
-<li>Même si le service qu’on utilise est gratuit, vous allez devoir entrer les informations d’une carte de crédit dans l’onglet <strong>billing</strong></li>
-<li>Une fois la carte de crédit saisie, accéder à la page de votre projet en revenant au tableau de bord (page principale) et en cliquant sur le nom du projet</li>
-<li>Dans la section <strong>installed add-ons</strong> cliquez sur <strong>configure add-ons</strong></li>
-<li>Faites une recherche pour <em>clearDB mysql</em> et choisissez <strong>ignite-free</strong> comme plan et cliquez sur <strong>Submit Order Form</strong></li>
-<li>Une fois l'ajout terminé, vous devriez avoir <strong>ClearDB</strong> dans les <em>add-ons</em></li>
+<li>Créez un nouveau projet avec <strong>Create React App</strong> que vous nommerez ex08_nom_prenom et faite le nécessaire le relier à un dépôt Github sur votre compte personnelle.</li>
+<li>À l'affichage et au rafraichissement de la page, votre application doit faire un appel à l'api de <strong>RandomUser</strong> et afficher les informations obtenues dans un composant "carte".</li>
+<li>Je vous laisse "découper" la carte en composant comme bon vous semble mais ça vous prends minimalement les composants suivants : </li>
+<li><code>Card</code> : Le composant "maitre" qui va englober les autres.</li>
+<li><code>Avatar</code> : Il s'occupe d'afficher uniquement la photo.</li>
+<li><code>Information</code> : La zone du bas où sont affiché les informations de l'usager</li>
+<li>Le composant doit être autonome, c'est-à-dire que si je l'inclus 2 fois dans la page, deux appels différent à l'api seront fait.</li>
+<li>Consulter la documentation du site <a href="https://randomuser.me/api/">https://randomuser.me/api/</a> pour connaître l'url à utiliser et connaitre le format de la réponse.</li>
+<li>Dans la section information, quand on clique sur un des icones, l'information affichée sous la photo doit être modifié en conséquence. Référez-vous à l'affichage fait sur <a href="https://randomuser.me/">https://randomuser.me/</a>.</li>
+<li>Une fois l'exercice terminé, poussez votre projet sur GitHub et retournez le devoir Teams associé avec l'url de votre dépôt.</li>
 </ul>
-<p><img alt="heroku_cleardb" src="\img\heroku_cleardb.png" /> </p>
-<h2 id="recuperer-des-informations-de-connexion">Récupérer des informations de connexion</h2>
-<p>Dans la console à la racine de votre application, entrez la commande suivante</p>
-<pre><code class="language-bash">$ heroku config
-</code></pre>
-<p>Résultat de la commande</p>
-<p><img alt="heroku_config" src="\img\heroku_config.png" /></p>
-<p>À la ligne <strong>CLEARDB_DATABASE_URL</strong> vous trouverez les informations de connexion à la BD. Les différentes valeurs ont une position bien précise dans la chaîne de texte.</p>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th align="center">Position dans la chaîne</th>
-<th>Valeur selon l'exemple</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>username</td>
-<td align="center">entre // et :</td>
-<td>b4692d61f95260</td>
-</tr>
-<tr>
-<td>password</td>
-<td align="center">entre : et @</td>
-<td>06aee1da</td>
-</tr>
-<tr>
-<td>host</td>
-<td align="center">entre @ et /</td>
-<td>us-cdbr-east-05.cleardb.net</td>
-</tr>
-<tr>
-<td>database</td>
-<td align="center">entre / et ?</td>
-<td>heroku_330c927d2db0d16</td>
-</tr>
-</tbody>
-</table>
-<p>Vous pouvez maintenant créer une connexion avec un gestionnaire de base de données (workbench, dbeaver, etc…)</p>
-<h2 id="importer-une-base-de-donnees">Importer une base de données</h2>
-<p>Dans un terminal lancez la commande suivante pour faire un backup de la base de données MySQL</p>
-<pre><code class="language-bash">$ mysqldump -h localhost -u root -pmysql --opt --routines --triggers libapi &gt; db_create.sql
-</code></pre>
-<p><img alt="heroku_mysqldump" src="\img\heroku_mysqldump.png" /></p>
-<ul>
-<li>Modifier les valeurs de l'usager (<strong>root</strong>), du mot de passe (<strong>mysql</strong>) et du nom de la base de données (<strong>libapi</strong>) selon votre configuration</li>
-<li>Le fichier <strong>db_create.sql</strong> va être créé dans le répertoire où vous avez lancé la commande.</li>
-<li>Ensuite encore en console on peut faire la commande suivante pour importer le script sql dans notre base de données en ligne.</li>
-</ul>
-<pre><code class="language-bash">$ mysql -u b5ca43976743b6 -h us-cdbr-east-03.cleardb.com -p3fba289e heroku_85142f7d498789b &lt; db_create.sql
-</code></pre>
-<p>En modifiant selon les informations de connexion obtenues auparavant avec la commande <code>heroku config</code>.</p>
-<p><img alt="heroku_import_bd" src="\img\heroku_import_bd.png" /></p>
-<p>Si vous avez l'erreur suivante</p>
-<pre><code class="language-bash">ERROR 1071 (42000) at line 25: Specified key was too long; max key length is 767 bytes
-</code></pre>
-<p>modifiez dans la base de données le type de données du champs <code>username</code> de la table <code>users</code> pour <code>varchar(50)</code> au lieu de <code>varchar(255)</code></p>
-<h2 id="stocker-les-informations-de-connexion">Stocker les informations de connexion</h2>
-<p>Pour nous simplifier la vie, on va stocker les informations dans un fichier php qui selon une constante retournera les bonnes valeurs. </p>
-<h3 id="creation-du-fichier-envphp">Création du fichier env.php</h3>
-<ul>
-<li>Dans le répertoire <code>config</code>de votre projet créez les fichier <code>env.php</code></li>
-<li>Entrez ensuite vos informations de connexion à la base de données MySQL en local et sur heroku</li>
-<li>La structure du fichier est la suivante</li>
-</ul>
-<pre><code class="language-php">&lt;?php 
-
-// Constante du mode de l'application
-// dev : variables utilisées en local
-// prod : pour le déploiement de l'api en production
-define(&quot;MODE&quot;, &quot;prod&quot;);
-
-switch (MODE) {
-    case &quot;dev&quot;:
-        // Configuration BD en local
-        $_ENV['host'] = 'localhost';
-        $_ENV['username'] = 'root';
-        $_ENV['database'] = 'libapi';
-        $_ENV['password'] = 'mysql';
-        break;
-
-    case &quot;prod&quot;:
-        // Configuration BD pour Heroku
-        $_ENV['host'] = 'us-cdbr-east-05.cleardb.net';
-        $_ENV['username'] = 'b4692d61f95260';
-        $_ENV['database'] = 'heroku_330c927d2db0d16';
-        $_ENV['password'] = '06aee1da';
-        break;
-};
-</code></pre>
-<p>Vous n'avez ensuite quand changer la valeur de la constante <code>MODE</code> à la ligne 6 selon les valeurs que vous voulez utiliser. </p>
-<ul>
-<li><strong>dev</strong> pour la base de données local</li>
-<li><strong>prod</strong> pour la base de données Heroku</li>
-</ul>
-<h3 id="modification-au-fichier-bootstrapphp">Modification au fichier bootstrap.php</h3>
-<p>Pour charger les variables d’environnements du fichier <code>env.php</code>, ajoutez la ligne suivante dans le fichier <code>config/bootstrap.php</code>.</p>
-<pre><code class="language-php">&lt;?php
-
-use DI\ContainerBuilder;
-use Slim\App;
-
-require_once __DIR__ . '/../vendor/autoload.php';
-// Chargement des variables d'environnement
-require_once __DIR__ . '/env.php'; // Ligne à ajouter
-
-$containerBuilder = new ContainerBuilder();
-</code></pre>
-<h3 id="modification-au-fichier-settingsphp">Modification au fichier settings.php</h3>
-<p>Modifier la section <strong>db</strong> du fichier <code>config/settings.php</code> pour utiliser les variables d’environnement.</p>
-<pre><code class="language-php">// ...
-
-// Database settings
-$settings['db'] = [
-    'driver' =&gt; 'mysql',
-    'host' =&gt; $_ENV['host'],
-    'username' =&gt; $_ENV['username'],
-    'database' =&gt; $_ENV['database'],
-    'password' =&gt; $_ENV['password'],
-    'charset' =&gt; 'utf8',
-    'collation' =&gt; 'utf8_general_ci',
-    'flags' =&gt; [
-        // Turn off persistent connections
-        PDO::ATTR_PERSISTENT =&gt; false,
-        // Enable exceptions
-        PDO::ATTR_ERRMODE =&gt; PDO::ERRMODE_EXCEPTION,
-        // Emulate prepared statements
-        PDO::ATTR_EMULATE_PREPARES =&gt; true,
-        // Set default fetch mode to array
-        PDO::ATTR_DEFAULT_FETCH_MODE =&gt; PDO::FETCH_ASSOC,
-        // Set character set
-        PDO::MYSQL_ATTR_INIT_COMMAND =&gt; 'SET NAMES utf8 COLLATE utf8_general_ci'
-    ],
-];
-
-// ...
-</code></pre>
-<h2 id="source">Source</h2>
-<ul>
-<li><a href="https://devcenter.heroku.com/articles/cleardb">https://devcenter.heroku.com/articles/cleardb</a>{target=_blank}</li>
-</ul>
+<p><strong>Exemple de résultat</strong></p>
+<p><img alt="exercice08_maquette" src="\img\exercice08_maquette.png" /></p>
 
               
             </article>
@@ -1282,7 +1049,7 @@ $settings['db'] = [
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../heroku_mise_en_ligne/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Mise en ligne du projet" rel="prev">
+        <a href="../07_react_state/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 07 - React - L&#39;état local" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1291,26 +1058,11 @@ $settings['db'] = [
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Mise en ligne du projet
+              07 - React - L'état local
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../../react/introduction/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Introduction à React" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Introduction à React
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -1334,10 +1086,10 @@ $settings['db'] = [
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
       
     
   </body>
