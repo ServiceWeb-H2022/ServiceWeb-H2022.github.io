@@ -1132,6 +1132,45 @@ componentDidMount() {
         })
 }
 </code></pre>
+<p>On a vu que les appels à un api se font de manière asynchrone, on ne peut donc pas être assuré que les données seront disponible lors du premier rendu du composant. Une méthode pour se protéger de cette éventualité est de tester dans la fonction render si nos valeurs existe dans l'état local, ou bien ajouter une variable booléenne qui devient vrai au succés de l'appel à l'api.</p>
+<pre><code class="language-react">import React from 'react';
+import axios from &quot;axios&quot;;
+
+class ListeUtilisasteur extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            // isLodad est faux tant que l'appel n'est pas terminé
+            isLoaded: false,
+            utilisateurs : [],
+        }
+    }
+
+    componentDidMount() {
+        axios.get('https://jsonplaceholder.typicode.com/users')
+            .then(function(response) {
+                const utilisateurs = response.data;
+                this.setState({
+                    utilisateurs : utilisateurs,
+                    isLoaded: true
+                })
+            })
+    }
+
+    render() {
+        if(!this.state.idLoaded){
+            return (
+                // HTML à retourner tant que l'appel n'est pas terminé, un message 
+                // de chargement par exemple
+            )
+        }
+
+        return (
+            // Le code &quot;régulier&quot;
+        )
+    }
+</code></pre>
 <h2 id="syntaxe">Syntaxe</h2>
 <p>Il y a deux syntaxes possible pour l'utilisation de Axios, c'est selon votre préférence</p>
 <p><strong>Méthode #1</strong></p>

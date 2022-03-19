@@ -1035,6 +1035,39 @@ class EditName extends React.Component {
 
 export default (EditName);
 </code></pre>
+<p>Attention, si vous utilisez une fonction "classique" il faudra "l'associer" dans le constructeur pour pouvoir utiliser <strong>this</strong>. </p>
+<pre><code class="language-react">import React from &quot;react&quot;;
+
+class EditName extends React.Component {
+    constructor(props) {
+        super(props);
+        // Liaison de la fonction avec this
+        this.handleNameChange = this.handleNameChange.bind(this)
+    }
+
+    // La fonction à lier
+    handleNameChange = function (event) {
+        this.props.changeName(event.target.value);
+    }
+
+    render() {
+        return (
+            &lt;div&gt;
+                &lt;label htmlFor='editName'&gt;Modifier le nom&lt;/label&gt;
+                &lt;input
+                    type=&quot;text&quot;
+                    id=&quot;editName&quot;
+                    name=&quot;editName&quot;
+                    value={this.props.nom}
+                    onChange={this.handleNameChange}
+                /&gt;    
+            &lt;/div&gt;
+        )
+    }
+}
+
+export default (EditName);
+</code></pre>
 
               
             </article>
