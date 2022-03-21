@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/notes_de_cours/react/mise_en_place/">
+        <link rel="canonical" href="https://example.com/notes_de_cours/api/auth_http/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
-        <title>Mise en place de l'environnement - Services Web</title>
+        <title>Schéma d'authentification HTTP - Services Web</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mise-en-place-de-lenvironnement" class="md-skip">
+        <a href="#schema-dauthentification-http" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mise en place de l'environnement
+              Schéma d'authentification HTTP
             
           </span>
         </div>
@@ -195,6 +195,8 @@
         
   
   
+    
+  
 
 
   
@@ -206,7 +208,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../api/bonnes_pratiques/" class="md-tabs__link">
+      <a href="../bonnes_pratiques/" class="md-tabs__link md-tabs__link--active">
         Notes de cours
       </a>
     </li>
@@ -290,12 +292,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -316,12 +320,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
       
       
       
@@ -344,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/bonnes_pratiques/" class="md-nav__link">
+      <a href="../bonnes_pratiques/" class="md-nav__link">
         Les bonnes pratiques dans la conception d'un API
       </a>
     </li>
@@ -358,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/documentation_api/" class="md-nav__link">
+      <a href="../documentation_api/" class="md-nav__link">
         Documentation de l'API
       </a>
     </li>
@@ -370,11 +376,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../api/auth_http/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Schéma d'authentification HTTP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Schéma d'authentification HTTP
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentification-basique-basic-authentification" class="md-nav__link">
+    Authentification basique (Basic Authentification)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearer-authentication" class="md-nav__link">
+    Bearer Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-cles-api" class="md-nav__link">
+    Les clés API
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../react/introduction/" class="md-nav__link">
         Introduction à React
       </a>
     </li>
@@ -550,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation_projet/" class="md-nav__link">
+      <a href="../../react/creation_projet/" class="md-nav__link">
         Création d'un projet
       </a>
     </li>
@@ -564,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../component/" class="md-nav__link">
+      <a href="../../react/component/" class="md-nav__link">
         Les composantes
       </a>
     </li>
@@ -578,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../props/" class="md-nav__link">
+      <a href="../../react/props/" class="md-nav__link">
         Les props
       </a>
     </li>
@@ -592,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../liste_component/" class="md-nav__link">
+      <a href="../../react/liste_component/" class="md-nav__link">
         Afficher une liste de composantes identiques
       </a>
     </li>
@@ -606,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../state/" class="md-nav__link">
+      <a href="../../react/state/" class="md-nav__link">
         L'état local (state)
       </a>
     </li>
@@ -620,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remonter_data/" class="md-nav__link">
+      <a href="../../react/remonter_data/" class="md-nav__link">
         Faire "remonter" des données
       </a>
     </li>
@@ -634,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cycle_de_vie/" class="md-nav__link">
+      <a href="../../react/cycle_de_vie/" class="md-nav__link">
         Cycle de vie d'une application
       </a>
     </li>
@@ -648,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fetch_api/" class="md-nav__link">
+      <a href="../../react/fetch_api/" class="md-nav__link">
         Consommer une api avec Axios
       </a>
     </li>
@@ -971,6 +1032,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentification-basique-basic-authentification" class="md-nav__link">
+    Authentification basique (Basic Authentification)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearer-authentication" class="md-nav__link">
+    Bearer Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-cles-api" class="md-nav__link">
+    Les clés API
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -982,8 +1072,45 @@
               
                 
 
-<h1 id="mise-en-place-de-lenvironnement">Mise en place de l'environnement</h1>
-<p>Pour vous aider dans le développement, installez l’extension React Developper Tools pour votre navigateur.</p>
+<h1 id="schema-dauthentification-http">Schéma d'authentification HTTP</h1>
+<p>Le protocole HTTP a une structure permettant le contrôle d'accès et l'authentification. Plusieurs schéma d'authentification HTTP ont été crée, nous verrons l'authentification basique (Basic) et par "jeton" (Bearer Token).</p>
+<h2 id="authentification-basique-basic-authentification">Authentification basique (Basic Authentification)</h2>
+<ul>
+<li>Le plus simple, mais le moins sécuritaire. </li>
+<li>On place un username et un mot de passe encodé en Base64 dans l’entête de la requête.</li>
+<li>On décode ensuite du côté serveur et on valide que les informations sont bonne.</li>
+<li>Si les informations sont invalide, on retourne le code de Statut HTTP 401. </li>
+<li>Pas besoin d’utiliser de cookie, de page de connexion, de id de session, etc.</li>
+<li>Le standart pour l'ajout de l'information dans l'entête est d'utiliser la forme suivante : </li>
+</ul>
+<pre><code>Authorization: Basic dXNlcm5hbWU6bWF0aCBwYXNzd29yZDp0ZXN0
+</code></pre>
+<p>où <code>dXNlcm5hbWU6bWF0aCBwYXNzd29yZDp0ZXN0</code> représente le mot de passe encodé en base64 sous la forme </p>
+<pre><code>username:nomUtilisateur password:motDePasse
+</code></pre>
+<h2 id="bearer-authentication">Bearer Authentication</h2>
+<ul>
+<li>Utilise un « token » de sécurité appelée « bearer token »</li>
+<li>Le token est généré par le serveur en réponse à une requête de connexion.</li>
+<li>Le client doit ensuite inclure le token dans l’entête de ses requêtes</li>
+<li>Exemple d’entête : </li>
+</ul>
+<pre><code>Authorization: Bearer 5bdd0b74e9a6c
+</code></pre>
+<p>Pour des raisons de sécurité, ces deux types d’authentification devraient <strong><u>toujours</u></strong> être utilisés en HTTPS</p>
+<h2 id="les-cles-api">Les clés API</h2>
+<ul>
+<li>Grandement utilisé et pouvant même être considéré comme un standard, même si encore une fois ce n’est pas la méthode la plus sécuritaire.</li>
+<li>Une valeur unique est générée « aléatoirement » pour chaque utilisateur ou application. </li>
+<li>Cette clé est ensuite ajoutée dans chaque requête, à différent endroit selon l’api.</li>
+</ul>
+<pre><code>Entête : Authorization: apikey 1234567890abcdef
+Section « query » de la requête : www.monapi.com/books?apikey=1234567890abcdef
+Body : {« apikey » : « 1234567890abcdef »}
+</code></pre>
+<ul>
+<li>En fait l’authentification par clé api est une forme d’authentification par « bearer token » comme vu plus haut.</li>
+</ul>
 
               
             </article>
@@ -998,6 +1125,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../documentation_api/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Documentation de l&#39;API" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Documentation de l'API
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../heroku/heroku/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Mise en ligne avec Heroku" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Mise en ligne avec Heroku
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
