@@ -1129,13 +1129,13 @@
 </code></pre>
 <p>Voici un exemple de la structure d'un appel à un "endpoint" d'un api avec Axios</p>
 <pre><code class="language-react">axios.get('/maroute')
-    .then(function(response) {
+    .then((response) =&gt; {
     // Traitement si succès
     })
-    .catch(function(error) {
+    .catch((error) =&gt; {
     // Traitement si erreur
     })
-    .then(function(){
+    .then(() =&gt; {
     // Traitement qui sera toujours exécuté
     }) 
 </code></pre>
