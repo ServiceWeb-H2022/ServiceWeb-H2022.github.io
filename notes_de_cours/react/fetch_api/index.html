@@ -652,6 +652,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../bind_function/" class="md-nav__link">
+        Lier une fonction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1153,7 +1167,7 @@ class ListeUtilisasteur extends React.Component {
 
 componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/users')
-        .then(function(response) {
+        .then((response) =&gt; {
             const utilisateurs = response.data;
             // On récupère les données reçues et on modifie le tableau dans l'état
             this.setState({utilisateurs : utilisateurs})
@@ -1177,7 +1191,7 @@ class ListeUtilisasteur extends React.Component {
 
     componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/users')
-            .then(function(response) {
+            .then((response) =&gt; {
                 const utilisateurs = response.data;
                 this.setState({
                     utilisateurs : utilisateurs,
@@ -1301,7 +1315,7 @@ import api from '../utils/Api';
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../cycle_de_vie/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Cycle de vie d&#39;une application" rel="prev">
+        <a href="../bind_function/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Lier une fonction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1310,7 +1324,7 @@ import api from '../utils/Api';
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Cycle de vie d'une application
+              Lier une fonction
             </div>
           </div>
         </a>

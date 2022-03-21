@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/notes_de_cours/react/bind_function/</loc>
+         <lastmod>2022-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/notes_de_cours/react/classes/</loc>
          <lastmod>2022-03-21</lastmod>
          <changefreq>daily</changefreq>
