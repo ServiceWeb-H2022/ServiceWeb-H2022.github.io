@@ -15,7 +15,7 @@
     
     
       
-        <title>Les formulaires - Services Web</title>
+        <title>La gestion des formulaires - Services Web</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-formulaires" class="md-skip">
+        <a href="#gestions-des-formulaires-html-avec-react" class="md-skip">
           Aller au contenu
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les formulaires
+              La gestion des formulaires
             
           </span>
         </div>
@@ -195,6 +195,8 @@
         
   
   
+    
+  
 
 
   
@@ -206,7 +208,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../api/bonnes_pratiques/" class="md-tabs__link">
+      <a href="../../api/bonnes_pratiques/" class="md-tabs__link md-tabs__link--active">
         Notes de cours
       </a>
     </li>
@@ -290,12 +292,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -374,6 +378,20 @@
     <li class="md-nav__item">
       <a href="../../api/auth_http/" class="md-nav__link">
         Schéma d'authentification HTTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/unit_test/" class="md-nav__link">
+        Test unitaires
       </a>
     </li>
   
@@ -508,12 +526,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
       
       
       
@@ -665,6 +685,68 @@
       <a href="../fetch_api/" class="md-nav__link">
         Consommer une api avec Axios
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          La gestion des formulaires
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        La gestion des formulaires
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    Source
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -999,6 +1081,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    Source
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1010,7 +1114,126 @@
               
                 
 
-<h1 id="les-formulaires">Les formulaires</h1>
+<h1 id="gestions-des-formulaires-html-avec-react">Gestions des formulaires HTML avec React</h1>
+<p>Les formulaires html possède déjà leur propre « état » interne. Si on veut utiliser les données saisies dans nos composants React, on va créer ce qu’on appelle un « composant contrôlé ». Quand le champ du formulaire sera modifié, sur l’évènement onChange par exemple, on va mettre à jour une variable dans le state du composant qui va être « liée » au champ. Ensuite l’évènement submit va aussi être intercepté et traité dans le composant avec les données de l’objet state.</p>
+<h2 id="exemple">Exemple</h2>
+<p>J’ai un composant ListeLivres qui affiche un formulaire d’ajout de livre et un tableau avec tous les livres. Le formulaire est un composant ainsi que chaque ligne du tableau de livres (FormAjouterLivre, LigneLivre). Je veux pouvoir ajouter un livre par le formulaire et que la liste de livres se mettre à jour automatiquement.</p>
+<p><img alt="react_form_01" src="\img\react_form_01.png" /></p>
+<p>Dans le composant principal <strong>ListeLivre</strong> je vais avoir ma liste de livres dans un tableau nommé books défini dans l’objet state et aussi une fonction <code>addBook()</code> qui prendra en paramêtre un objet book qui contient les informations extrait du formulaire. </p>
+<p>La fonction <code>addBook()</code> va s’occuper de faire l’appel à l’api pour ajouter le livre et mettre à jour le tableau <strong>Books</strong> de l’objet state, ce qui va aussi mettre à jour l’affichage de la liste de livre.</p>
+<p>Dans le constructeur du composant, le tableau <strong>books</strong> est déclaré. On doit aussi « binder » les fonctions pour qu’elles soient reconnues, c’est ce qui est fait à la ligne <code>this.addBook = this.addBook.bind(this);</code>.</p>
+<pre><code class="language-react">// Extrait de la classe ListeLivre
+constructor(props) {
+    super(props);
+    this.state = {
+        books: []
+    };
+
+    this.addBook = this.addBook.bind(this);
+}
+</code></pre>
+<p>Dans la fonction <code>addBook()</code>, on fait l’appel à l’Api pour ajouter le livre et ensuite sur un résultat positif on ajoute le nouveau livre dans le tableau books de l’objet state. Dans le résultat, on commence par ajouter le id du nouveau livre dans l’objet book reçu en paramètre. Ensuite on crée un nouveau tableau avec le tableau books auquel on ajoute l’objet book. Finalement on met le tableau books de l’objet state à jour.</p>
+<pre><code class="language-react">// Extrait de la classe ListeLivre
+addBook(book) {
+    api({
+        method: 'POST',
+        url: '/books',
+        data: {
+            genreId: book.genreId,
+            titre: book.titre,
+            isbn: book.isbn
+        }
+    })
+        .then((resultat) =&gt; {
+            book.id = resultat.data.id;
+            const books = [...this.state.books, book];
+            this.setState({books: books});
+    });
+}
+</code></pre>
+<p>Étant donné que la gestion de l’ajout se fait dans le composant ListeLivre et que la gestion du formulaire est dans FormAjouterLivre, quand on appelle <strong>FormAjouterLivre</strong> on doit lui passer en paramètre la fonction <code>addBooks()</code> pour pouvoir l’utiliser.</p>
+<pre><code class="language-react">&lt;FormAjouterLivre addBook={this.addBook}/&gt;
+</code></pre>
+<p>Dans le composant <strong>FormAjouterLivre</strong>, je définis les variables dans le state qui contiendront les valeurs du formulaire. Je me suis aussi créé trois fonction : </p>
+<ul>
+<li><code>handleChange</code>, qui va modifier les variables du state quand un contrôle du formulaire sera modifié.</li>
+<li><code>handleSubmit</code>, qui va appelé la fonction addBook du composant ListeLivres reçu en props.</li>
+<li><code>clearImputs</code>, qui va simplement réinitialiser les variables state et en même temps les contrôles du formulaire.</li>
+</ul>
+<p>Ensuite dans le formulaire, je relis la fonction <code>handleSubmit</code> à l’événement onSubmit de la balise form et <code>handleChange</code> à l’événement <strong>onChange</strong> de chaque input. Les variables titre, genreId et isbn vont contenir les valeurs des inputs du même nom. Ensuite je bind les fonctions utilisées.</p>
+<pre><code class="language-react">// Constructeur de la classe FormAjouterLivre
+constructor(props) {
+    super(props);
+    this.state = {
+        titre: '',
+        genreId: '',
+        isbn: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.clearInput = this.clearInput.bind(this);
+}
+</code></pre>
+<p>Dans la fonction handleChange, le code suivant permet de mettre à jour la variable de l’objet state qui a le même nom que le input du formulaire. Pour que ça fonctionne, il faut que la propriété name du input soit du même nom que la variable. On aurait aussi pu faire une fonction handleChange par input mais ça ajoute beaucoup de code pour rien. Ex. handleTitreChange qui met à jour this.state.titre.</p>
+<pre><code class="language-react">handleChange(event) {
+    const name = event.target.name;
+    const value = event.target.value;
+
+    this.setState({
+        [name]: value
+    });
+}
+</code></pre>
+<p>Dans la fonction handleSubmit, je crée un objet book avec les valeurs de l’objet state et ensuite j’appelle la fonction addBook reçu en paramètre. J’empêche aussi le comportement par défaut du submit avec <code>event.preventDefault();</code> </p>
+<pre><code class="language-react">handleSubmit(event) {
+    const book = {
+        titre: this.state.titre,
+        genreId: this.state.genreId,
+        isbn: this.state.isbn,
+    };
+    this.props.addBook(book);
+
+    event.preventDefault();
+    this.clearInput();
+}
+</code></pre>
+<p>Finalement j’appelle la fonction <code>clearInput</code> qui s’occupe de réinitialiser les variables.</p>
+<pre><code class="language-react">clearInput() {
+    this.setState({
+        titre: '',
+        genreId: '',
+        isbn: '',
+    });
+}
+</code></pre>
+<p>Voici une partie du formulaire </p>
+<pre><code class="language-react">&lt;form onSubmit={this.handleSubmit}&gt;
+    &lt;table className='BooksTable'&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label&gt;Titre :&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;input
+                        type=&quot;text&quot;
+                        id=&quot;titre&quot;
+                        name=&quot;titre&quot;
+                        value={this.state.titre}
+                        onChange={this.handleChange}
+                        /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+</code></pre>
+<p>Voilà une façon de gérer les formulaires et faire un ajout via un appel à notre api. Les fichiers de mes composantes ListeLivres et FormAjouterLivre sont disponible ici pour consultation : </p>
+<ul>
+<li><a href="\resources\ListeLivres.js">ListeLivres.js</a></li>
+<li><a href="\resources\FormAjouterLivre.js">FormAjouterLivre.js</a></li>
+</ul>
+<h2 id="source">Source</h2>
+<ul>
+<li><a href="https://fr.reactjs.org/docs/forms.html">https://fr.reactjs.org/docs/forms.html</a></li>
+<li><a href="https://www.w3schools.com/react/react_forms.asp">https://www.w3schools.com/react/react_forms.asp</a></li>
+</ul>
 
               
             </article>
@@ -1025,6 +1248,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../fetch_api/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Consommer une api avec Axios" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Consommer une api avec Axios
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../php/revision_php/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Revision PHP" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Revision PHP
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

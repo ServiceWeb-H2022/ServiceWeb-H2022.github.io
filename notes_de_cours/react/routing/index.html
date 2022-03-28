@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://example.com/exercices/06_react_component/">
+        <link rel="canonical" href="https://example.com/notes_de_cours/react/routing/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
-        <title>06 - React - Composants et props - Services Web</title>
+        <title>Routage - Services Web</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e60f8b8.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -36,7 +36,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-06-composants-et-props" class="md-skip">
+        <a href="#routage" class="md-skip">
           Aller au contenu
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../.." title="Services Web" class="md-header__button md-logo" aria-label="Services Web" data-md-component="logo">
+    <a href="../../.." title="Services Web" class="md-header__button md-logo" aria-label="Services Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg>
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              06 - React - Composants et props
+              Routage
             
           </span>
         </div>
@@ -186,7 +186,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Accueil
     </a>
   </li>
@@ -206,7 +206,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-tabs__link">
+      <a href="../../api/bonnes_pratiques/" class="md-tabs__link">
         Notes de cours
       </a>
     </li>
@@ -218,15 +218,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../01_utilisation_api/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../exercices/01_utilisation_api/" class="md-tabs__link">
         Exercices
       </a>
     </li>
@@ -260,7 +258,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Services Web" class="md-nav__button md-logo" aria-label="Services Web" data-md-component="logo">
+    <a href="../../.." title="Services Web" class="md-nav__button md-logo" aria-label="Services Web" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg>
@@ -279,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Accueil
       </a>
     </li>
@@ -346,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/api/bonnes_pratiques/" class="md-nav__link">
+      <a href="../../api/bonnes_pratiques/" class="md-nav__link">
         Les bonnes pratiques dans la conception d'un API
       </a>
     </li>
@@ -360,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/api/documentation_api/" class="md-nav__link">
+      <a href="../../api/documentation_api/" class="md-nav__link">
         Documentation de l'API
       </a>
     </li>
@@ -374,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/api/auth_http/" class="md-nav__link">
+      <a href="../../api/auth_http/" class="md-nav__link">
         Schéma d'authentification HTTP
       </a>
     </li>
@@ -388,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/api/unit_test/" class="md-nav__link">
+      <a href="../../api/unit_test/" class="md-nav__link">
         Test unitaires
       </a>
     </li>
@@ -435,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku/" class="md-nav__link">
+      <a href="../../heroku/heroku/" class="md-nav__link">
         Mise en ligne avec Heroku
       </a>
     </li>
@@ -449,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku_compte/" class="md-nav__link">
+      <a href="../../heroku/heroku_compte/" class="md-nav__link">
         Création d'un compte Heroku
       </a>
     </li>
@@ -463,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku_connexion/" class="md-nav__link">
+      <a href="../../heroku/heroku_connexion/" class="md-nav__link">
         Connexion à Heroku depuis un terminal
       </a>
     </li>
@@ -477,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku_creation_projet/" class="md-nav__link">
+      <a href="../../heroku/heroku_creation_projet/" class="md-nav__link">
         Création d'un projet Heroku
       </a>
     </li>
@@ -491,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku_mise_en_ligne/" class="md-nav__link">
+      <a href="../../heroku/heroku_mise_en_ligne/" class="md-nav__link">
         Mise en ligne du projet
       </a>
     </li>
@@ -505,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/heroku/heroku_mysql/" class="md-nav__link">
+      <a href="../../heroku/heroku_mysql/" class="md-nav__link">
         Configuration de la base de données MySQL
       </a>
     </li>
@@ -552,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         Introduction à React
       </a>
     </li>
@@ -566,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/creation_projet/" class="md-nav__link">
+      <a href="../creation_projet/" class="md-nav__link">
         Création d'un projet
       </a>
     </li>
@@ -580,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/component/" class="md-nav__link">
+      <a href="../component/" class="md-nav__link">
         Les composantes
       </a>
     </li>
@@ -594,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/props/" class="md-nav__link">
+      <a href="../props/" class="md-nav__link">
         Les props
       </a>
     </li>
@@ -608,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/liste_component/" class="md-nav__link">
+      <a href="../liste_component/" class="md-nav__link">
         Afficher une liste de composantes identiques
       </a>
     </li>
@@ -622,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/state/" class="md-nav__link">
+      <a href="../state/" class="md-nav__link">
         L'état local (state)
       </a>
     </li>
@@ -636,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/remonter_data/" class="md-nav__link">
+      <a href="../remonter_data/" class="md-nav__link">
         Faire "remonter" des données
       </a>
     </li>
@@ -650,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/cycle_de_vie/" class="md-nav__link">
+      <a href="../cycle_de_vie/" class="md-nav__link">
         Cycle de vie d'une application
       </a>
     </li>
@@ -664,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/bind_function/" class="md-nav__link">
+      <a href="../bind_function/" class="md-nav__link">
         Lier une fonction
       </a>
     </li>
@@ -678,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/fetch_api/" class="md-nav__link">
+      <a href="../fetch_api/" class="md-nav__link">
         Consommer une api avec Axios
       </a>
     </li>
@@ -692,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/react/form/" class="md-nav__link">
+      <a href="../form/" class="md-nav__link">
         La gestion des formulaires
       </a>
     </li>
@@ -739,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/php/revision_php/" class="md-nav__link">
+      <a href="../../php/revision_php/" class="md-nav__link">
         Revision PHP
       </a>
     </li>
@@ -786,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/slim/middleware/" class="md-nav__link">
+      <a href="../../slim/middleware/" class="md-nav__link">
         Middleware
       </a>
     </li>
@@ -800,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/slim/monolog/" class="md-nav__link">
+      <a href="../../slim/monolog/" class="md-nav__link">
         Utilisation de journaux d'évènements (Log files)
       </a>
     </li>
@@ -814,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes_de_cours/slim/recuperer_params/" class="md-nav__link">
+      <a href="../../slim/recuperer_params/" class="md-nav__link">
         Récupérer les paramètres d'une requête HTTP
       </a>
     </li>
@@ -841,14 +839,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -871,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_utilisation_api/" class="md-nav__link">
+      <a href="../../../exercices/01_utilisation_api/" class="md-nav__link">
         01 - Consommer une api
       </a>
     </li>
@@ -885,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_revision_php/" class="md-nav__link">
+      <a href="../../../exercices/02_revision_php/" class="md-nav__link">
         02 - Revision PHP
       </a>
     </li>
@@ -899,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_hello_world_api/" class="md-nav__link">
+      <a href="../../../exercices/03_hello_world_api/" class="md-nav__link">
         03 - HelloWorldApi
       </a>
     </li>
@@ -913,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_libapi/" class="md-nav__link">
+      <a href="../../../exercices/04_libapi/" class="md-nav__link">
         04 - LibAPI
       </a>
     </li>
@@ -927,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_heroku/" class="md-nav__link">
+      <a href="../../../exercices/05_heroku/" class="md-nav__link">
         05 - LibAPI - Hébergement avec Heroku
       </a>
     </li>
@@ -939,59 +935,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          06 - React - Composants et props
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../exercices/06_react_component/" class="md-nav__link">
         06 - React - Composants et props
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-faire-ensuite" class="md-nav__link">
-    À faire ensuite
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1003,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_react_state/" class="md-nav__link">
+      <a href="../../../exercices/07_react_state/" class="md-nav__link">
         07 - React - L'état local
       </a>
     </li>
@@ -1017,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_axios/" class="md-nav__link">
+      <a href="../../../exercices/08_axios/" class="md-nav__link">
         08 - React - Consommer une api avec Axios
       </a>
     </li>
@@ -1031,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09_auth_api_key/" class="md-nav__link">
+      <a href="../../../exercices/09_auth_api_key/" class="md-nav__link">
         09 - LibAPI - Authentification avec une clé API
       </a>
     </li>
@@ -1045,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10_react_form/" class="md-nav__link">
+      <a href="../../../exercices/10_react_form/" class="md-nav__link">
         10 - LibAPI - Les formulaires en React
       </a>
     </li>
@@ -1079,28 +1027,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-faire-ensuite" class="md-nav__link">
-    À faire ensuite
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1112,92 +1038,13 @@
               
                 
 
-<h1 id="exercice-06-composants-et-props">Exercice 06 - Composants et props</h1>
-<h2 id="installation">Installation</h2>
+<h1 id="routage">Routage</h1>
+<p><strong>Source</strong></p>
 <ul>
-<li>Créer un nouveau projet React nommé mybooks (en minuscule).</li>
-<li>Remplacez le code du fichier <code>App.js</code> par celui-ci</li>
-</ul>
-<pre><code class="language-react">import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-
-class App extends React.Component {
-  render(){
-
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-      &lt;header className=&quot;App-header&quot;&gt;
-          &lt;h1&gt;MyBooks&lt;/h1&gt;
-
-          &lt;h3&gt;Liste des livres&lt;/h3&gt;
-
-          &lt;table className=&quot;BooksTable&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;id&lt;/th&gt;
-                &lt;th&gt;Titre&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;1&lt;/td&gt;
-                &lt;td&gt;Fondation&lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td&gt;2&lt;/td&gt;
-                &lt;td&gt;Les montagnes hallucinÃ©es&lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td&gt;3&lt;/td&gt;
-                &lt;td&gt;Blade Runner&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-      &lt;/header&gt;
-    &lt;/div&gt;
-    );
-  }
-}
-
-export default (App);
-</code></pre>
-<ul>
-<li>Au début de la fonction render() de la classe App, ajoutez le tableau suivant d'objets "livre".</li>
-</ul>
-<pre><code class="language-react">const books = [
-    {id:1, titre:'Fondation'},
-    {id:2, titre:'Les montagnes hallucinées'},
-    {id:3, titre:'Blade Runner'}
-];
-</code></pre>
-<ul>
-<li>Ajoutez les lignes suivante à la fin du fichier <code>App.css</code>  </li>
-</ul>
-<pre><code class="language-css">.BooksTable th, .BooksTable td {
-  text-align: left;
-  padding-right: 15px;
-}
-</code></pre>
-<p>Maintenant lancer l'application avec la commande <code>npm start</code> et vous devriez avoir ce résultat</p>
-<p><img alt="exercice06" src="\img\exercice06.png" /></p>
-<h2 id="a-faire-ensuite">À faire ensuite</h2>
-<ul>
-<li>
-<p>Créez les composantes suivantes en dans des fichiers séparés situés dans le répertoire <code>src/components</code></p>
-</li>
-<li>
-<p>Une composante <code>Titre</code> qui va remplacer la balise <code>&lt;h3&gt;</code> dans le fichier <code>App.js</code>. Elle recevra un paramètre <code>texte</code> qui sera le texte à afficher. La composante retournera une balise <code>&lt;h3&gt;</code> avec la valeur du paramètre reçu.</p>
-</li>
-<li>
-<p>Une composante nommée  <code>Tableau</code>. Cette composante va remplacer la balise <code>&lt;table&gt;</code> dans le fichier <code>App.js</code>. Elle recevra un paramètre <code>livres</code> qui est le tableau de livres qu’on a défini plus haut. Elle va retourner le code html pour afficher le tableau.</p>
-</li>
-<li>
-<p>Une composante <code>LigneTableau</code>. Cette composante va être utilisé dans la composante <code>Tableau</code> pour afficher une ligne du tableau. Elle recevra un paramètre <code>livre</code> qui représente un objet du tableau livres. Elle va retourner le code html pour afficher un ligne du tableau (une balise <code>&lt;tr&gt;</code> et son contenu) avec les valeurs reçues en paramètres.</p>
-</li>
-<li>
-<p>Modifiez le fichier <code>App.js</code> pour utiliser les composantes créés.</p>
-</li>
+<li>https://reactrouter.com/</li>
+<li>https://v5.reactrouter.com/web/guides/quick-start</li>
+<li>https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router</li>
+<li>https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e</li>
 </ul>
 
               
@@ -1213,41 +1060,6 @@ export default (App);
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
-      
-        
-        <a href="../05_heroku/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 05 - LibAPI - Hébergement avec Heroku" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              05 - LibAPI - Hébergement avec Heroku
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../07_react_state/" class="md-footer__link md-footer__link--next" aria-label="Suivant: 07 - React - L&#39;état local" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              07 - React - L'état local
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1269,10 +1081,10 @@ export default (App);
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.960e086b.min.js"></script>
       
     
   </body>
